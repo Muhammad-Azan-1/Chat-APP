@@ -1,0 +1,99 @@
+[06-04-2026 11:17:00:170] [31merror[39m: [31mThis is a dummy test error purely for Winston![39m
+[06-04-2026 17:04:39:439] [31merror[39m: [31mCannot set property query of #<IncomingMessage> which has only a getter[39m
+[06-04-2026 17:06:11:611] [31merror[39m: [31mCannot set property query of #<IncomingMessage> which has only a getter[39m
+[06-04-2026 17:07:43:743] [31merror[39m: [31mCannot set property query of #<IncomingMessage> which has only a getter[39m
+[06-04-2026 17:07:46:746] [31merror[39m: [31mCannot set property query of #<IncomingMessage> which has only a getter[39m
+[06-04-2026 17:07:46:746] [31merror[39m: [31mCannot set property query of #<IncomingMessage> which has only a getter[39m
+[06-04-2026 17:07:46:746] [31merror[39m: [31mCannot set property query of #<IncomingMessage> which has only a getter[39m
+[06-04-2026 17:07:46:746] [31merror[39m: [31mCannot set property query of #<IncomingMessage> which has only a getter[39m
+[06-04-2026 17:07:46:746] [31merror[39m: [31mCannot set property query of #<IncomingMessage> which has only a getter[39m
+[06-04-2026 17:07:47:747] [31merror[39m: [31mCannot set property query of #<IncomingMessage> which has only a getter[39m
+[06-04-2026 17:07:47:747] [31merror[39m: [31mCannot set property query of #<IncomingMessage> which has only a getter[39m
+[06-04-2026 17:07:47:747] [31merror[39m: [31mCannot set property query of #<IncomingMessage> which has only a getter[39m
+[06-04-2026 17:07:47:747] [31merror[39m: [31mCannot set property query of #<IncomingMessage> which has only a getter[39m
+[06-04-2026 17:07:47:747] [31merror[39m: [31mCannot set property query of #<IncomingMessage> which has only a getter[39m
+[06-04-2026 17:07:47:747] [31merror[39m: [31mCannot set property query of #<IncomingMessage> which has only a getter[39m
+[06-04-2026 17:07:47:747] [31merror[39m: [31mCannot set property query of #<IncomingMessage> which has only a getter[39m
+[06-04-2026 17:14:51:1451] [31merror[39m: [31mCannot read properties of null (reading 'username')[39m
+[06-04-2026 17:15:24:1524] [31merror[39m: [31mCannot read properties of null (reading 'username')[39m
+[06-04-2026 17:17:05:175] [31merror[39m: [31muser.generateVerficationOTP is not a function[39m
+[06-04-2026 17:17:40:1740] [31merror[39m: [31mUsername already exists[39m
+[06-04-2026 17:18:02:182] [31merror[39m: [31mUser.save is not a function[39m
+[06-04-2026 17:18:46:1846] [31merror[39m: [31mMissing credentials for "PLAIN"[39m
+[06-04-2026 17:20:40:2040] [31merror[39m: [31mMissing credentials for "PLAIN"[39m
+[06-04-2026 17:25:22:2522] [31merror[39m: [31mInvalid login: 535-5.7.8 Username and Password not accepted. For more information, go to[39m
+[31m535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-48899d3a4e9sm180101315e9.6 - gsmtp[39m
+[06-04-2026 17:49:34:4934] [31merror[39m: [31mUsername already exists[39m
+[06-04-2026 17:50:28:5028] [31merror[39m: [31mInvalid login: 535-5.7.8 Username and Password not accepted. For more information, go to[39m
+[31m535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-43d1e4d2971sm40289880f8f.22 - gsmtp[39m
+[06-04-2026 17:54:18:5418] [31merror[39m: [31mInvalid login: 535-5.7.8 Username and Password not accepted. For more information, go to[39m
+[31m535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4887e93cf2dsm456176545e9.11 - gsmtp[39m
+[06-04-2026 17:59:18:5918] [31merror[39m: [31mCannot read properties of undefined (reading 'error')[39m
+[08-04-2026 07:32:01:321] [31merror[39m: [31muser.checkPassword is not a function[39m
+[08-04-2026 07:33:30:3330] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:34:03:343] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:36:14:3614] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:36:16:3616] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:36:17:3617] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:43:56:4356] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:44:04:444] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:44:09:449] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:45:01:451] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:45:01:451] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:45:02:452] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:51:41:5141] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:51:42:5142] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:51:43:5143] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:56:38:5638] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:56:39:5639] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:56:39:5639] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:58:29:5829] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:58:30:5830] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 07:58:30:5830] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 08:25:53:2553] [31merror[39m: [31mPlease verify your email first[39m
+[08-04-2026 08:29:02:292] [31merror[39m: [31mFailed to generate tokens[39m
+[08-04-2026 08:30:33:3033] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 08:38:52:3852] [31merror[39m: [31mInvalid OTP or OTP has expired[39m
+[08-04-2026 08:47:44:4744] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 08:48:10:4810] [31merror[39m: [31mPlease verify your email first[39m
+[08-04-2026 08:48:29:4829] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 08:49:37:4937] [31merror[39m: [31mPlease verify your email first[39m
+[08-04-2026 09:03:46:346] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 09:17:01:171] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 09:17:16:1716] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 09:17:17:1717] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 09:17:18:1718] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 09:19:02:192] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 09:19:03:193] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 09:19:04:194] [31merror[39m: [31mInvaled Email or Password[39m
+[08-04-2026 10:04:13:413] [31merror[39m: [31mInvalid OTP or OTP has expired[39m
+[08-04-2026 10:04:14:414] [31merror[39m: [31mInvalid OTP or OTP has expired[39m
+[08-04-2026 10:04:16:416] [31merror[39m: [31mInvalid OTP or OTP has expired[39m
+[08-04-2026 10:05:36:536] [31merror[39m: [31mPlease verify your email first[39m
+[08-04-2026 10:08:03:83] [31merror[39m: [31mCannot read properties of undefined (reading 'error')[39m
+[08-04-2026 10:23:45:2345] [31merror[39m: [31mCannot read properties of undefined (reading 'error')[39m
+[08-04-2026 10:55:18:5518] [31merror[39m: [31mPlease provide token and password[39m
+[08-04-2026 10:55:22:5522] [31merror[39m: [31mPlease provide token and password[39m
+[08-04-2026 10:55:53:5553] [31merror[39m: [31mPlease provide token and password[39m
+[08-04-2026 13:30:43:3043] [31merror[39m: [31mUser validation failed: authProvider: `google` is not a valid enum value for path `authProvider`.[39m
+[16-04-2026 15:26:10:2610] [31merror[39m: [31mjwt malformed[39m
+[16-04-2026 15:26:15:2615] [31merror[39m: [31mjwt malformed[39m
+[16-04-2026 15:27:28:2728] [31merror[39m: [31mjwt malformed[39m
+[16-04-2026 16:16:25:1625] [31merror[39m: [31mRefresh token is required[39m
+[17-04-2026 11:41:45:4145] [31merror[39m: [31mRefresh token is required[39m
+[17-04-2026 18:22:18:2218] [31merror[39m: [31mENOENT: no such file or directory, open '/public/tmp/my-uploads/avatar-1776432138572-687976731'[39m
+[17-04-2026 18:23:26:2326] [31merror[39m: [31mMust supply api_key[39m
+[17-04-2026 18:56:36:5636] [31merror[39m: [31mE11000 duplicate key error collection: test.users index: verificationToken_1 dup key: { verificationToken: null }[39m
+[17-04-2026 19:23:26:2326] [31merror[39m: [31mE11000 duplicate key error collection: test.users index: verificationToken_1 dup key: { verificationToken: null }[39m
+[17-04-2026 19:23:42:2342] [31merror[39m: [31mE11000 duplicate key error collection: test.users index: verificationToken_1 dup key: { verificationToken: null }[39m
+[17-04-2026 19:28:59:2859] [31merror[39m: [31mE11000 duplicate key error collection: test.users index: verificationToken_1 dup key: { verificationToken: null }[39m
+[20-04-2026 15:20:59:2059] [31merror[39m: [31mRefresh token is required[39m
+[20-04-2026 15:20:59:2059] [31merror[39m: [31mRefresh token is required[39m
+[20-04-2026 15:21:04:214] [31merror[39m: [31mRefresh token is required[39m
+[20-04-2026 15:21:04:214] [31merror[39m: [31mRefresh token is required[39m
+[20-04-2026 18:40:16:4016] [31merror[39m: [31mCannot destructure property 'id' of 'req.user' as it is undefined.[39m
+[21-04-2026 14:52:40:5240] [31merror[39m: [31mCannot destructure property 'id' of 'req.user' as it is undefined.[39m
+[21-04-2026 14:54:42:5442] [31merror[39m: [31mjwt expired[39m
+[21-04-2026 15:24:46:2446] [31merror[39m: [31mjwt expired[39m
+[21-04-2026 15:25:01:251] [31merror[39m: [31mjwt expired[39m
+[26-04-2026 14:12:51:1251] [31merror[39m: [31mNot allowed by CORS[39m
