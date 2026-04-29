@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { register , verifyEmail , login , resendEmailVerfication,  search,forgotPassword , resetPassword , googleAuth , editProfile , refreshAcessToken , logout } from "../controllers/user.controllers.js";
 import { authLimiter, registerLimiter, verifyLimiter, loginLimiter, resendEmailLimiter, forgotPasswordLimiter } from "../middleware/rateLimiter.middleware.js";
-import { verifyJWT } from "../middleware/verifyJwt.middleware.js";
+import { verifyJWT, verifyJWTSoft } from "../middleware/verifyJwt.middleware.js";
 import {upload} from '../middleware/mutler.middleware.js'
 const router = Router()
 
@@ -29,7 +29,7 @@ router.route("/refreshAcessToken").post(refreshAcessToken)
 
 //? =================== PROTECTED ROUTES (Login required) ===================
 
-router.route("/logout").post(verifyJWT, logout)
+router.route("/logout").post(verifyJWTSoft, logout)
 
 router.route("/editProfile").post(verifyJWT, upload.single("avatar") ,editProfile)
 

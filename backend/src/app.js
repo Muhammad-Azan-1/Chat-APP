@@ -5,11 +5,12 @@ import morganMiddleware from './logger/morgan.logger.js'
 import logger from './logger/winston.logger.js'
 import userRouter from './routes/user.routes.js'
 import chatRouter from './routes/chat.routes.js'
+import messageRouter from './routes/message.routes.js'
 import mongoSanitize from 'express-mongo-sanitize'
 import cookieParser from "cookie-parser"
 import http from 'http'
 import {Server} from 'socket.io'
-
+import { intitializeSocketIO } from './sockets/index.js'
 
 const app = express()
 
@@ -21,8 +22,17 @@ const io = new  Server(server,{
     origin : process.env.CORS_ORIGIN,
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials : true
-  }
+  },
+  // --- THE HEARTBEAT SETTINGS ---
+  pingTimeout: 60000,   // How long to wait for a pong before giving up (in ms)
+  pingInterval: 25000,  // How often to send a ping (in ms)
 })
+// Every 25 seconds, your Node.js server asks the React frontend, "Are you still there?" (Ping). means
+// send a ping packet to the frontend
+
+// After sending the ping packet, the server waits 60 seconds. If the React frontend doesn't reply "Yes,
+// I'm here!" means doesnot reply with (Pong) packet within those 60 seconds, the server officially kills 
+// the connection and logs "User disconnected".
 
 
 
@@ -60,15 +70,18 @@ app.use(morganMiddleware)
 app.use(cors(corsOptions))
 
 
-
+//? socket 
 app.set("io" , io)
+intitializeSocketIO(io)
 
 //? Auth Routes
 app.use("/api/v1/users" , userRouter)
 
 //? Chat Routes
-app.use("/api/v1/chat" , chatRouter)
+app.use("/api/v1/chats" , chatRouter)
 
+//? Message Routes
+app.use("/api/v1/message" , messageRouter)
 
 
 //? Health check
@@ -76,6 +89,8 @@ app.get("/health", (req, res) => {
     logger.info("Someone hit the /health route!")
     res.status(200).json({ status: "OK", message: "Server is running" })
 })
+
+
 
 
 app.use(errorHandler)

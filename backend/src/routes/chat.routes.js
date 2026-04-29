@@ -1,12 +1,13 @@
 import Router from 'express'
-import { createOneOnONeChat} from '../controllers/chat.controllers.js'
+import { createOneOnONeChat , getAllChats , deleteOneOnOneChat} from '../controllers/chat.controllers.js'
 
 import {verifyJWT} from '../middleware/verifyJwt.middleware.js'
 
 const router = Router()
 
 
-router.route('/c/:receiverId').post( verifyJWT,createOneOnONeChat)
-
+router.route('/create/:receiverId').post(verifyJWT,createOneOnONeChat)
+router.route("/getAllChats").get(verifyJWT , getAllChats)
+router.route('/delete/:chatId').delete(verifyJWT , deleteOneOnOneChat)
 
 export default router

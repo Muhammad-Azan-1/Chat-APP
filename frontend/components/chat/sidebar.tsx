@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import {
   Sheet,
@@ -6,8 +6,20 @@ import {
   SheetTitle,
   SheetDescription,
 } from "@/components/ui/sheet";
-import { Users, Pencil, UserPlus, Trash2 } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogFooter,
+} from "@/components/ui/dialog";
+import { Users, Pencil, UserPlus, Trash2, AlertTriangle } from "lucide-react";
 import type { Props } from "@/types/chat.types";
+import { customFetch } from "@/lib/customFetch";
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "@/redux/store/store";
+import { DELETE_CHAT_ACTION } from "@/redux/actions/chatAction";
 
 const MOCK_PARTICIPANTS = [
   {
@@ -34,9 +46,44 @@ const MOCK_PARTICIPANTS = [
 ];
 
 const SideBar = ({ isSidebarOpen, setIsSidebarOpen, selectedChat }: Props) => {
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [deleteError, setDeleteError] = useState("");
+  const [showDeleteDialog, setShowDeleteDialog] = useState(false);
+  const dispatch = useDispatch<AppDispatch>();
+
   if (!selectedChat) return null;
 
   const isGroup = selectedChat.isGroup;
+
+  const handleDeleteChat = async () => {
+    if (!selectedChat?.id) return;
+
+    setIsDeleting(true);
+    setDeleteError("");
+
+    try {
+      const response = await customFetch(`/api/v1/chats/delete/${selectedChat.id}`, {
+        method: "DELETE", // Note: Backend uses GET instead of DELETE
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || "Failed to delete chat");
+      }
+
+      // Dispatch delete action to remove from Redux store
+      dispatch(DELETE_CHAT_ACTION(selectedChat.id));
+
+      // Close dialogs after successful deletion
+      setShowDeleteDialog(false);
+      setIsSidebarOpen?.(false);
+    } catch (error: any) {
+      console.error("Delete chat error:", error);
+      setDeleteError(error.message || "Something went wrong while deleting chat");
+    } finally {
+      setIsDeleting(false);
+    }
+  };
 
   return (
     <Sheet open={isSidebarOpen} onOpenChange={setIsSidebarOpen}>
@@ -57,14 +104,14 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen, selectedChat }: Props) => {
                 <span className="text-white text-sm font-medium">CHANGE</span>
               </div>
               <Image
-                src={selectedChat.groupAvatars?.[0] || "/images/test.png"}
+                src={selectedChat.groupAvatar?.[0] || "/images/test.png"}
                 alt="Member 1"
                 width={200}
                 height={200}
                 className="absolute top-0 right-0 rounded-full w-[105px] h-[105px] object-cover border-4 border-[#1e2029]"
               />
               <Image
-                src={selectedChat.groupAvatars?.[1] || "/images/test.png"}
+                src={selectedChat.groupAvatar?.[1] || "/images/test.png"}
                 alt="Member 2"
                 width={200}
                 height={200}
@@ -90,6 +137,7 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen, selectedChat }: Props) => {
             <h2 className="text-2xl font-semibold text-white">
               {selectedChat.name}
             </h2>
+
             {isGroup && (
               <button className="p-1 hover:bg-gray-500/20 rounded-md transition-colors text-gray-300">
                 <Pencil size={18} />
@@ -104,7 +152,7 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen, selectedChat }: Props) => {
             </p>
           ) : (
             <p className="text-gray-400 text-sm mt-1 block max-w-full truncate px-4">
-              {selectedChat.name.toLowerCase().replace(/\s/g, "")}@example.com
+              {selectedChat.email}
             </p>
           )}
         </div>
@@ -162,7 +210,10 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen, selectedChat }: Props) => {
                 <UserPlus size={18} />
                 Add participant
               </button>
-              <button className="w-full flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 text-white py-3.5 rounded-2xl font-medium transition-colors">
+              <button
+                onClick={() => setShowDeleteDialog(true)}
+                className="w-full flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 text-white py-3.5 rounded-2xl font-medium transition-colors"
+              >
                 <Trash2 size={18} />
                 Delete group
               </button>
@@ -184,7 +235,10 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen, selectedChat }: Props) => {
             </div>
             
             <div className="flex flex-col gap-3 mt-auto shrink-0 pb-4">
-               <button className="w-full flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 text-white py-3.5 rounded-2xl font-medium transition-colors">
+               <button
+                 onClick={() => setShowDeleteDialog(true)}
+                 className="w-full flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 text-white py-3.5 rounded-2xl font-medium transition-colors"
+               >
                 <Trash2 size={18} />
                 Delete chat
               </button>
@@ -192,6 +246,70 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen, selectedChat }: Props) => {
           </div>
         )}
       </SheetContent>
+
+      {/* Delete Confirmation Dialog */}
+      <Dialog open={showDeleteDialog} onOpenChange={setShowDeleteDialog}>
+        <DialogContent className="bg-[#1e2029] border border-gray-600/40 text-white max-w-sm rounded-2xl shadow-2xl p-0 overflow-hidden">
+          <DialogHeader className="px-6 pt-6 pb-0">
+            {/* Icon */}
+            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-red-500/10 border border-red-500/20 mx-auto mb-4">
+              <AlertTriangle className="w-7 h-7 text-red-400" />
+            </div>
+
+            <DialogTitle className="text-center text-xl font-semibold text-white">
+              Delete {isGroup ? "Group" : "Chat"}
+            </DialogTitle>
+            <DialogDescription className="text-center text-gray-400 text-sm mt-1">
+              Are you sure you want to delete{" "}
+              <span className="text-white font-semibold">"{selectedChat.name}"</span>?
+              {isGroup
+                ? " This will remove the group for all participants."
+                : " This will permanently delete your conversation history."}
+            </DialogDescription>
+          </DialogHeader>
+
+          {deleteError && (
+            <div className="mx-6 mt-4 bg-red-500/10 border border-red-500/50 rounded-lg p-3 text-red-400 text-sm text-center">
+              {deleteError}
+            </div>
+          )}
+
+          <DialogFooter className="flex flex-col sm:flex-row gap-3 px-6 py-6">
+            {/* Cancel */}
+            <button
+              type="button"
+              onClick={() => {
+                setShowDeleteDialog(false);
+                setDeleteError("");
+              }}
+              disabled={isDeleting}
+              className="flex-1 cursor-pointer py-3 rounded-xl bg-white/8 hover:bg-white/12 border border-white/10 text-gray-300 font-medium text-sm transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Cancel
+            </button>
+
+            {/* Confirm Delete */}
+            <button
+              type="button"
+              onClick={handleDeleteChat}
+              disabled={isDeleting}
+              className="flex-1 cursor-pointer flex items-center justify-center gap-2 py-3 rounded-xl bg-red-500/15 hover:bg-red-500 border border-red-500/30 text-red-400 hover:text-white font-medium text-sm transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {isDeleting ? (
+                <>
+                  <span className="w-4 h-4 border-2 border-red-400/40 border-t-red-400 rounded-full animate-spin" />
+                  Deleting…
+                </>
+              ) : (
+                <>
+                  <Trash2 className="w-4 h-4" />
+                  Yes, Delete
+                </>
+              )}
+            </button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </Sheet>
   );
 };

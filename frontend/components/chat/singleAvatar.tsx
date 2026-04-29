@@ -1,9 +1,9 @@
 import Image from 'next/image';
 
 
-const SingleAvatar = ({ src, alt }: { src: string; alt: string }) => (
+const SingleAvatar = ({ src, alt }: { src: string | string[] ; alt: string }) => (
   <Image
-    src={src}
+    src={typeof src == 'string' ? src : ''}
     alt={alt}
     width={100}
     height={100}

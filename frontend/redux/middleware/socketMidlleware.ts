@@ -1,78 +1,110 @@
 //* This middleware intercepts Redux actions and handles socket connection logic. Here's the flow:
 
 import { Middleware } from "redux";
-import {io , Socket} from 'socket.io-client'
-import { CONNECT_SOCKET , SOCKET_CONNECTED , SOCKET_DISCONNECTED ,SOCKET_ERROR } from "../reducers/socketReducer";
-// import { RootState } from "../store/store";
+import { io, Socket } from "socket.io-client";
+import {
+  SOCKET_CONNECTED,
+  SOCKET_DISCONNECTED,
+  SOCKET_ERROR,
+} from "../reducers/socketReducer";
 
 
 
-let socketInstance : Socket | null  =  null
 
-const socketMiddleware : Middleware = (store) => (next) => (action : any) =>{
+// Define a globally persistent object for the socket so it survives Next.js HMR (Fast Refresh)
+// 💡 Note on TypeScript Casting (as unknown as ...):
+// TypeScript doesn't natively know about our custom 'socketInstance' property on the global window object.
+// We use "as unknown" to strip its strict default type, and then cast it to our custom object type
+// so TypeScript stops complaining and lets us save the socket connection persistently!
+const globalForSocket = globalThis as unknown as {
+  socketInstance: Socket | null;
+};
 
-    // Test logging - remove these after testing
-    console.log('=== SOCKET MIDDLEWARE ===')
-    console.log("Action" , action)
-    console.log('Action Type:', action.type)
-    console.log('Action Payload:', action.payload)
-
-    // Handle CONNECT_SOCKET action
-
-    if (action.type === "socket/CONNECT_SOCKET") {
-
-        console.log("received socket connection request")
-        
-        // if(socketInstance?.connected){
-        //     return next(action)
-        // }
-       
-        // socketInstance = io('http://localhost:4000', {withCredentials: true})
-
-        // // Set up event listeners
-        // socketInstance.on('connect', () => {
-        //     console.log('Socket connected successfully!'  , socketInstance?.id)
-        //     store.dispatch(SOCKET_CONNECTED())
-        // })
-
-        // socketInstance.on('disconnect', () => {
-        //     console.log('Socket disconnected' , socketInstance?.id)
-        //     store.dispatch(SOCKET_DISCONNECTED())
-        //     socketInstance = null
-        // })
-
-        // socketInstance.on('connect_error', (error) => {
-        //     console.error('Socket connection error:', error)
-        //     store.dispatch(SOCKET_ERROR(error.message))
-        //      socketInstance = null
-        // })
-
-
-        // // Listen for chat events
-        // socketInstance.on('newChat', (data) => {
-        //     console.log('New chat received:', data)
-        // })
-
-        // socketInstance.on('messageReceived', (data) => {
-        //     console.log('New message received:', data)
-        // })
-
-    // Always call next(action) to pass action to reducer
-    // return next(action)
-    }
-
-
-    // if(action === 'socket/SOCKET_DISCONNECTED'){
-    //     if(socketInstance){
-    //     socketInstance.disconnect()
-    //     socketInstance = null
-    //     }
-    // }
-
-    return next(action);
+// Initialize it safely if it doesn't exist
+if (globalForSocket.socketInstance === undefined) {
+  globalForSocket.socketInstance = null;
 }
 
-export {socketMiddleware}
+const socketMiddleware: Middleware = (store) => (next) => (action: any) => {
+  // Test logging - remove these after testing
+  // console.log('=== SOCKET MIDDLEWARE ===')
+  // console.log("Action" , action)
+  // console.log('Action Type:', action.type)
+  // console.log('Action Payload:', action.payload)
+
+  // Handle CONNECT_SOCKET action
+
+  if (action.type === "socket/CONNECT_SOCKET") {
+    // console.log("received socket connection request")
+
+    if (globalForSocket.socketInstance) {
+      // console.log("Connection attempt already in progress or established")
+      return next(action);
+    }
+
+    //? 1. Initialize the connection
+    globalForSocket.socketInstance = io("http://localhost:4000", { withCredentials: true });
+
+    //? 2. Listen for the 'connected' event emitted by backend
+    globalForSocket.socketInstance.on("connected", () => {
+      console.log(
+        "Socket connected successfully!",
+        globalForSocket.socketInstance?.id,
+      );
+      store.dispatch(SOCKET_CONNECTED());
+    });
+
+    //? 3. Listen for the 'disconnect' event emitted by backend
+    globalForSocket.socketInstance.on("disconnect", () => {
+      console.log("Socket disconnected", globalForSocket.socketInstance?.id);
+      store.dispatch(SOCKET_DISCONNECTED());
+      globalForSocket.socketInstance = null;
+    });
+
+    //? 4. Listen for the 'connect_error' event emitted by socket it self
+    globalForSocket.socketInstance.on("connect_error", (error) => {
+      console.error("Socket connection error:", error);
+      store.dispatch(SOCKET_ERROR(error.message));
+      globalForSocket.socketInstance = null;
+    });
+
+    // Listen for chat events
+    globalForSocket.socketInstance.on("newChat", (data) => {
+      console.log("New chat received:", data);
+    });
+
+    globalForSocket.socketInstance.on("messageReceived", (data) => {
+      console.log("New message received:", data);
+    });
+
+    
+    // for CONNECT_SOCKET action
+    // console.log("RUnning first next return")
+    return next(action);
+  }
+
+  if (action.type === "socket/SOCKET_DISCONNECTED") {
+    if (globalForSocket.socketInstance) {
+      globalForSocket.socketInstance.disconnect();
+      globalForSocket.socketInstance = null;
+    }
+  }
+
+  // for all other reducer actions
+  // console.log("RUnning second next return")
+  return next(action);
+};
+
+export { socketMiddleware };
+
+
+
+
+
+
+
+
+
 
 
 
@@ -82,7 +114,6 @@ export {socketMiddleware}
 
 //*     -----------------------------------------------------------------------------------------------       *//
 //*     -----------------------------------------------------------------------------------------------       *//
-
 
 //? Explanation
 
@@ -106,12 +137,12 @@ export {socketMiddleware}
 // 2. `store.dispatch()`: Koi naya action trigger kar sakte hain (jaise aapne `SOCKET_CONNECTED` fire kiya tha).
 
 // #### B. `next` (The Conveyor Belt)
-// Yeh sab se important parameter hai! Middleware raste ka chowkidar hota hai. Jab aapka kaam (jaise socket connect karna) khatam ho jaye, toh aapko action ko aage **Reducer** tak bhejna hota hai. 
+// Yeh sab se important parameter hai! Middleware raste ka chowkidar hota hai. Jab aapka kaam (jaise socket connect karna) khatam ho jaye, toh aapko action ko aage **Reducer** tak bhejna hota hai.
 // Jab aap function ke end mein `return next(action)` likhte hain, toh iska matlab hai: *"Mera kaam ho gaya, ab is action ko aage guzarne do taake Reducer state update kar sake."*
 // *(Agar aap `next(action)` nahi likhenge, toh app wahi stuck ho jayegi aur Reducer tak baat pohnchegi hi nahi!)*
 
 // #### C. `action` (The Order/Box)
-// Yeh wo actual action object hai jo aapke component ne dispatch kiya hai. 
+// Yeh wo actual action object hai jo aapke component ne dispatch kiya hai.
 // Jaise: `{ type: 'socket/CONNECT_SOCKET', payload: { user } }`.
 // Middleware is `action.type` ko check karta hai aur uske mutabiq apna kaam karta hai.
 
@@ -127,13 +158,10 @@ export {socketMiddleware}
 // Is line ka matlab hai:
 // *"Main ek Middleware hoon, mujhe Manager (`store`) ka number do, phir main dekhta hoon aage bhejna hai (`next`) ya nahi, aur akhir mein mujhe batao ke order (`action`) kya hai!"*
 
-
 //*     -----------------------------------------------------------------------------------------------       *//
 //*     -----------------------------------------------------------------------------------------------       *//
 
-
-
-//? FLOW 
+//? FLOW
 
 // Page Refresh
 //         ↓
@@ -161,3 +189,27 @@ export {socketMiddleware}
 // SocketProvider re-renders
 // sees isAuthenticated = true
 // dispatches CONNECT_SOCKET()
+
+
+
+// //? extra 
+
+
+// //? recconet Events
+//     const socket = globalForSocket.socketInstance;
+
+//     // 1. See if it even tries
+//     socket.io.on("reconnect_attempt", (attempt) => {
+//       console.log(`[Socket.io] Auto-reconnect attempt #${attempt}...`);
+//     });
+
+//     // 2. See if it throws an error while trying
+//     socket.io.on("reconnect_error", (error) => {
+//       console.log(`[Socket.io] Auto-reconnect failed:`, error.message);
+//     });
+
+//     // 3. See if it actually succeeds!
+//     socket.io.on("reconnect", (attempt) => {
+//       console.log(`[Socket.io] SUCCESS! Reconnected after ${attempt} tries.`);
+//        store.dispatch(SOCKET_CONNECTED()); // Tell Redux we are back!
+//     });

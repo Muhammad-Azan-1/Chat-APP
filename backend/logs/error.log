@@ -97,3 +97,30 @@
 [21-04-2026 15:24:46:2446] [31merror[39m: [31mjwt expired[39m
 [21-04-2026 15:25:01:251] [31merror[39m: [31mjwt expired[39m
 [26-04-2026 14:12:51:1251] [31merror[39m: [31mNot allowed by CORS[39m
+[27-04-2026 16:20:15:2015] [31merror[39m: [31mjwt expired[39m
+[27-04-2026 16:20:18:2018] [31merror[39m: [31mjwt expired[39m
+[27-04-2026 16:20:19:2019] [31merror[39m: [31mjwt expired[39m
+[28-04-2026 16:13:50:1350] [31merror[39m: [31mObjectId is not defined[39m
+[28-04-2026 16:29:37:2937] [31merror[39m: [31mChat.create is not a constructor[39m
+[28-04-2026 16:30:25:3025] [31merror[39m: [31mcommonChatAggregation is not iterable[39m
+[29-04-2026 20:25:36:2536] [31merror[39m: [31mjwt expired[39m
+[29-04-2026 20:25:58:2558] [31merror[39m: [31mjwt expired[39m
+[29-04-2026 20:25:58:2558] [31merror[39m: [31mjwt expired[39m
+[29-04-2026 20:26:34:2634] [31merror[39m: [31mjwt expired[39m
+[29-04-2026 20:26:34:2634] [31merror[39m: [31mjwt expired[39m
+[29-04-2026 20:42:36:4236] [31merror[39m: [31mjwt expired[39m
+[30-04-2026 01:17:46:1746] [31merror[39m: [31mjwt expired[39m
+[30-04-2026 01:17:46:1746] [31merror[39m: [31mjwt expired[39m
+[30-04-2026 01:17:50:1750] [31merror[39m: [31mjwt expired[39m
+[30-04-2026 01:17:50:1750] [31merror[39m: [31mjwt expired[39m
+[30-04-2026 01:31:56:3156] [31merror[39m: [31mjwt expired[39m
+[30-04-2026 01:33:33:3333] [31merror[39m: [31mjwt expired[39m
+[30-04-2026 01:35:38:3538] [31merror[39m: [31mjwt expired[39m
+[30-04-2026 01:36:32:3632] [31merror[39m: [31mjwt expired[39m
+[30-04-2026 01:36:56:3656] [31merror[39m: [31mjwt expired[39m
+[30-04-2026 01:38:15:3815] [31merror[39m: [31mjwt expired[39m
+[30-04-2026 01:38:15:3815] [31merror[39m: [31mjwt expired[39m
+[30-04-2026 01:42:51:4251] [31merror[39m: [31mToken expired[39m
+[30-04-2026 01:42:51:4251] [31merror[39m: [31mToken expired[39m
+[30-04-2026 04:08:32:832] [31merror[39m: [31mParameter "filter" to findOne() must be an object, got "69f28276c5be43d5984ffbed" (type string)[39m
+[30-04-2026 04:08:32:832] [31merror[39m: [31mParameter "filter" to findOne() must be an object, got "69f28276c5be43d5984ffbed" (type string)[39m

@@ -455,42 +455,45 @@ const refreshAcessToken = asyncHandler(async (req, res, next) => {
   const incomingRefreshToken =
     req.cookies?.refreshToken || req.body?.refreshToken;
 
-  console.log("Incoming token", incomingRefreshToken);
-
   if (!incomingRefreshToken) {
-    throw new ApiError(400, "Refresh token is required");
+    throw new ApiError(401, "Refresh token is required");
   }
 
-  const decodeToken = jwt.verify(
-    incomingRefreshToken,
-    process.env.REFRESH_TOKEN_SECRET,
-  );
-
-  if(!decodeToken){
-    res.status(200).send(new ApiError(401 , "Invaled Refresh token or Expired")) 
-   }
-
-  console.log("decoded", decodeToken);
+  // IMPORTANT: jwt.verify() THROWS on expired/invalid tokens.
+  // Without try/catch, an expired refresh token causes a 500 crash
+  // instead of a clean 401 that tells the frontend "session is dead".
+  let decodeToken;
+  try {
+    decodeToken = jwt.verify(
+      incomingRefreshToken,
+      process.env.REFRESH_TOKEN_SECRET,
+    );
+  } catch (error) {
+    // Token expired or tampered → session is dead → frontend should redirect to login
+    throw new ApiError(401, "Refresh token is invalid or expired");
+  }
 
   const user = await User.findById(decodeToken.id);
 
   if (!user) {
-    throw new ApiError(400, "Invalid Refresh Token");
+    throw new ApiError(401, "Invalid Refresh Token");
   }
 
-  if (user.refreshToken != incomingRefreshToken) {
-    throw new ApiError(400, "Refresh token has been used or expire");
+  // If the token in DB doesn't match, it means it was already used (token rotation)
+  // or someone is reusing an old token → possible token theft
+  if (user.refreshToken !== incomingRefreshToken) {
+    throw new ApiError(401, "Refresh token has been used or expired");
   }
 
   const { accessToken, refreshToken: newRefreshToken } =
-    await generateAccessAndRefreshToken(decodeToken?.id);
+    await generateAccessAndRefreshToken(decodeToken.id);
 
   res
     .cookie("accessToken", accessToken, cookieOptions)
     .cookie("refreshToken", newRefreshToken, cookieOptions)
     .status(200)
     .json(
-      new ApiResponse(200, "Acess Token has been generated", {
+      new ApiResponse(200, "Access Token has been generated", {
         accessToken,
         newRefreshToken,
       }),
@@ -576,12 +579,16 @@ const editProfile = asyncHandler(async (req, res, next) => {
 
 
 const logout = asyncHandler(async (req, res, next) => {
-  // Clear the refreshToken stored in DB so the old token is invalidated server-side
-  await User.findByIdAndUpdate(
-    req.user?._id,
-    { $unset: { refreshToken: 1 } },
-    { new: true },
-  );
+  // verifyJWTSoft sets req.user even with expired tokens.
+  // If req.user exists, clean up their refresh token in DB.
+  // If req.user is null (no token / garbage token), just clear cookies.
+  if (req.user?._id) {
+    await User.findByIdAndUpdate(
+      req.user._id,
+      { $unset: { refreshToken: 1 } },
+      { new: true },
+    );
+  }
 
   return res
     .status(200)
@@ -594,6 +601,7 @@ const logout = asyncHandler(async (req, res, next) => {
 // ============================================================================
 //? 10. Search
 // ============================================================================
+
 
 const search = asyncHandler(async (req, res, next)=>{
 
@@ -626,9 +634,9 @@ const search = asyncHandler(async (req, res, next)=>{
 
 
     searchCache.set(cacheKey , users)
+    console.log("Users find" , users)
 
     return res
-
         .status(200)
         .json(new ApiResponse(200, "Users fetched successfully", users));
 

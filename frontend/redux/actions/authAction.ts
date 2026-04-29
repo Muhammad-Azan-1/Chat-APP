@@ -5,11 +5,8 @@ import type { User } from "@/types/auth.types"
 
 
 function LOGIN_USER_ACTION(user: User) {
-    
-    console.log("USER received", user)
 
     return (dispatch: AppDispatch) => {
-        console.log("action dispatched")
         dispatch(LOGIN_USER(user))
     }
 }

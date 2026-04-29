@@ -1,3 +1,4 @@
+import { customFetch } from "@/lib/customFetch";
 import { useSelector } from "react-redux";
 import React, { useState } from "react";
 import Image from "next/image";
@@ -74,14 +75,14 @@ const ProfileSidebar = ({
 
       console.log("Saving profile data:",formData);
 
-      const response = await fetch('/api/v1/users/editProfile', {
+      const response = await customFetch('/api/v1/users/editProfile', {
         method: 'POST',
         body: formData,
       })
 
       const data = await response.json()
 
-      console.log(data)
+      console.log(data , "DATA")
       if (!response.ok) {
         throw new Error(data.message)
       }

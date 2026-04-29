@@ -7,28 +7,28 @@ import { RootState } from '../redux/store/store'
 import  {CONNECT_SOCKET , SOCKET_DISCONNECTED} from '../redux/reducers/socketReducer'
 
 const SocketProvider = ({children} : {children : React.ReactNode}) => {
-      console.log("component rendered Socket Provider")
+      // console.log("component rendered Socket Provider")
 
     const dispatch = useDispatch()
     const {isAuthenticated} = useSelector((item : RootState) => item.auth)
     const { isConnecting, isConnected } = useSelector((item: RootState) => item.socket)
 
-    console.log(isConnected , isConnecting , isAuthenticated)
+    // console.log(isConnected , isConnecting , isAuthenticated)
 
   useEffect(()=>{
  
-    console.log("SocketProvider Effect executing. Current state:", { isAuthenticated, isConnecting, isConnected });
+    // console.log("SocketProvider Effect executing. Current state:", { isAuthenticated, isConnecting, isConnected });
 
     if(isAuthenticated  && !isConnecting && !isConnected){
-      console.log('User authenticated, connecting socket...')
+      // console.log('User authenticated, connecting socket...')
       dispatch(CONNECT_SOCKET())
     }
     
     if(!isAuthenticated && isConnected){
-      console.log('User not authenticated, disconnecting socket...')
+      // console.log('User not authenticated, disconnecting socket...')
       dispatch(SOCKET_DISCONNECTED())
     }
-  },[isAuthenticated , isConnected , isConnecting , dispatch])
+  },[isAuthenticated])
   
   return (
     <>{children}</>

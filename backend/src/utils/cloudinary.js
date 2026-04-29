@@ -2,13 +2,14 @@ import { v2 as cloudinary } from 'cloudinary'
 import fs from 'fs'
 import { ApiError } from './apiError.js';
 
-const uploadFileToCloudinary = async (localFilePath, resourceType = "auto") =>{
-
-  cloudinary.config({ 
-  cloud_name: process.env.CLOUD_NAME, 
-  api_key: process.env.API_KEY, 
-  api_secret: process.env.API_SECRET, 
+// Configure cloudinary once at module level
+cloudinary.config({
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET,
 });
+
+const uploadFileToCloudinary = async (localFilePath, resourceType = "auto") =>{
 
   try {
    console.log("file path", localFilePath)
@@ -51,13 +52,6 @@ const uploadFileToCloudinary = async (localFilePath, resourceType = "auto") =>{
 
 
 const deleteFileFromCloudinary = async (fileUrl) => {
-
-    cloudinary.config({ 
-  cloud_name: process.env.CLOUD_NAME, 
-  api_key: process.env.API_KEY, 
-  api_secret: process.env.API_SECRET, 
-});
-
 
   try {
 

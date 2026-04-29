@@ -24,7 +24,8 @@ const errorHandler = (err, req, res, next) => {
   
 
   // Beautifully log the error using Winston
-  logger.error(error.message);
+   logger.error(error.message);
+  logger.error(response);
 
   // Send error response
   return res?.status(error.statusCode).json(response);

@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import SocketProvider from "./SocketProvider";
 
 const MainProvider = ({ children }: { children: React.ReactNode }) => {
-  console.log("component rendered");
+  // console.log("component rendered");
 
   return (
     <>

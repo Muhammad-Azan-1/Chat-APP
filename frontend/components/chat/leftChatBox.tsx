@@ -1,7 +1,7 @@
 "use client";
 
 import AddChatButton from "./addChatButton";
-import { MoreVertical, User } from "lucide-react";
+import { MoreVertical, User, Loader2, MessageSquare } from "lucide-react";
 import type { SelectedChat , Props } from "@/types/chat.types";
 import GroupAvatar from "./groupAvatar";
 import SingleAvatar from "./singleAvatar";
@@ -10,36 +10,59 @@ import Image from "next/image";
 import type { LoggedInUser } from "@/types/auth.types";
 import { useSelector } from "react-redux";
 import LogoutDialog from "@/components/auth/shared/LogoutDialog";
+import { useEffect, useState } from "react";
+import { customFetch } from "@/lib/customFetch";
+import { BackendChatPayload } from "@/types/chat.types";
 
-// ── mock chat list ─────────────────────────────────────────────────────────
-const MOCK_CHATS: SelectedChat[] = [
-  {
-    id: "1",
-    name: "User Name",
-    avatar: "/images/test.png",
-    isOnline: true,
-    isGroup: false,
-    lastMessage: "no message yet",
-    time: "a few seconds",
-    unreadCount: 3,
-  },
-  {
-    id: "2",
-    name: "Developers Group",
-    avatar: "/images/test.png",
-    isOnline: false,
-    isGroup: true,
-    groupAvatars: ["/images/test.png", "/images/test.png"],
-    lastMessage: "Hey guys, checking out the new chat UI!",
-    lastSender: "Azan",
-    time: "12:30 PM",
-    unreadCount: 3,
-  },
-];
+import { transformBackendChatToUI } from "@/lib/transformBackendChatToUI";
+import { useDispatch } from "react-redux";
+import { SET_CHAT_ACTION } from "@/redux/actions/chatAction";
+import { AppDispatch } from "@/redux/store/store";
 
 const LeftChatBox = ({ selectedChat, onSelectChat , setIsSidebarOpen, setIsProfileOpen }: Props) => {
 
-  const {details , isAuthenticated} : LoggedInUser = useSelector((items : {auth : LoggedInUser}) => items?.auth)
+  const [isLoading, setIsLoading] = useState(true);
+  const [fetchError, setFetchError] = useState("");
+
+  const {details} : LoggedInUser = useSelector(( state : {auth : LoggedInUser} ) => state?.auth)
+  const chats : SelectedChat[] = useSelector((state : {chat : {chats : SelectedChat[]}}) => state.chat.chats)
+  const dispatch = useDispatch<AppDispatch>()
+
+  useEffect(()=>{
+    async function fetchChats(){
+      if (!details?._id) return; // Wait for user details to load
+
+      setIsLoading(true);
+      setFetchError("");
+
+      try {
+        let response = await customFetch('/api/v1/chats/getAllChats' , {method : 'GET'})
+
+        if(!response.ok){
+          const errorData = await response.json();
+          throw new Error(errorData.message || "Failed to load chats")
+        }
+        let data =  await response.json()
+
+        let formattedChats : SelectedChat[] = data.data.map((rawData : BackendChatPayload )=>{
+         return transformBackendChatToUI(rawData , details?._id)
+        })
+
+        dispatch(SET_CHAT_ACTION(formattedChats))
+
+     } catch (error: any) {
+      console.error("Fetch chats error:", error)
+      setFetchError(error.message || "Failed to load chats")
+     } finally {
+      setIsLoading(false)
+     }
+    }
+
+    fetchChats()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[details?._id]) // Re-fetch when user details load
+
+  // console.log("val" , val)
   return (
     <div className="w-full h-screen border-r border-gray-600/30 flex flex-col bg-white/5 backdrop-blur-xl shadow-2xl">
 
@@ -99,13 +122,51 @@ const LeftChatBox = ({ selectedChat, onSelectChat , setIsSidebarOpen, setIsProfi
       </div>
 
       {/* Chat list */}
+
       <div className="flex-1 overflow-y-auto px-4 mt-2 pb-4 space-y-3 custom-scrollbar">
-        {MOCK_CHATS.map((chat) => {
-          const isActive = selectedChat?.id === chat.id;
+        {/* Loading State */}
+        {isLoading && (
+          <div className="flex flex-col items-center justify-center h-full gap-3">
+            <Loader2 size={40} className="animate-spin text-[#6c75f5]" />
+            <p className="text-gray-400 text-sm">Loading chats...</p>
+          </div>
+        )}
+
+        {/* Error State */}
+        {!isLoading && fetchError && (
+          <div className="flex flex-col items-center justify-center h-full gap-3 px-6">
+            <div className="bg-red-500/10 border border-red-500/50 rounded-xl p-4 text-center">
+              <p className="text-red-400 text-sm mb-2">{fetchError}</p>
+              <button
+                onClick={() => window.location.reload()}
+                className="text-[#6c75f5] text-sm hover:underline"
+              >
+                Retry
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Empty State */}
+        {!isLoading && !fetchError && chats.length === 0 && (
+          <div className="flex flex-col items-center justify-center h-full gap-3 px-6 text-center">
+            <MessageSquare size={48} className="text-gray-500" />
+            <div>
+              <h3 className="text-white font-medium mb-1">No chats yet</h3>
+              <p className="text-gray-400 text-sm">
+                Start a conversation by clicking "Add Chat" above
+              </p>
+            </div>
+          </div>
+        )}
+
+        {/* Chat List */}
+        {!isLoading && !fetchError && chats.length > 0 && chats.map((chat) => {
+          const isActive = selectedChat?.id === chat?.id;
 
           return (
             <div
-              key={chat.id}
+              key={chat?.id}
               onClick={() => onSelectChat && onSelectChat(chat)}
               className={`group relative flex items-center cursor-pointer w-full min-h-[85px] rounded-2xl overflow-hidden transition-all duration-300
                 ${isActive
@@ -138,35 +199,40 @@ const LeftChatBox = ({ selectedChat, onSelectChat , setIsSidebarOpen, setIsProfi
                   </Popover>
                 </div>
 
-                <div className={`w-full h-full flex items-center py-3 ${chat.isGroup ? "gap-x-4" : "gap-x-3"}`}>
+                <div className={`w-full h-full flex items-center py-3 ${chat?.isGroup ? "gap-x-4" : "gap-x-3"}`}>
                   {/* Avatar — single or stacked group */}
                   <div className="relative shrink-0">
-                    {chat.isGroup && chat.groupAvatars?.length
-                      ? <GroupAvatar avatars={chat.groupAvatars} />
-                      : <SingleAvatar src={chat.avatar} alt={chat.name} />
+                    {chat?.isGroup && Array.isArray(chat.groupAvatar) && chat.groupAvatar.length > 0
+                      ? <GroupAvatar avatars={chat?.groupAvatar} />
+                      : <SingleAvatar src={chat?.avatar} alt={chat?.name} />
                     }
-                    {chat.isOnline && (
+                    {chat?.isOnline && (
                       <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-[#1e2029] rounded-full" />
                     )}
                   </div>
 
                   {/* Name + last message */}
                   <div className="flex flex-col flex-1 pr-14 sm:pr-16 overflow-hidden">
-                    <h1 className="text-[16px] font-semibold text-gray-100 truncate">{chat.name}</h1>
+                    <h1 className="text-[16px] font-semibold text-gray-100 truncate">{chat?.name}</h1>
                     <p className="text-[13px] text-gray-400 truncate w-full">
-                      {chat.isGroup && chat.lastSender && (
-                        <span className="text-[#6c75f5] font-medium">{chat.lastSender}: </span>
+                      {chat?.isGroup && chat?.lastSender && (
+                        <span className="text-[#6c75f5] font-medium">{chat?.lastSender}: </span>
                       )}
-                      {chat.lastMessage ?? "no message yet"}
+                      {chat?.lastMessage ?? "no message yet"}
                     </p>
                   </div>
                 </div>
               </div>
 
+
+
+
               {/* Time + unread badge */}
               <div className="absolute top-1/2 -translate-y-1/2 right-3 sm:right-4 flex flex-col items-end gap-y-1.5">
-                <p className={`text-[11px] ${chat.unreadCount ? "text-[#6c75f5] font-medium" : "text-gray-500"}`}>{chat.time}</p>
-                {chat.unreadCount && (
+                <p className={`text-[11px] ${chat?.unreadCount && chat.unreadCount > 0 ? "text-[#6c75f5] font-medium" : "text-gray-500"}`}>
+                  {chat.time}
+                </p>
+                {chat?.unreadCount && chat.unreadCount > 0 && (
                   <div className="bg-[#6c75f5] text-white text-[10px] font-bold px-1.5 py-0.5 min-w-[20px] text-center rounded-full shadow-[0_0_8px_rgba(108,117,245,0.4)]">
                     {chat.unreadCount}
                   </div>
@@ -176,8 +242,10 @@ const LeftChatBox = ({ selectedChat, onSelectChat , setIsSidebarOpen, setIsProfi
           );
         })}
       </div>
+    
     </div>
   );
 };
 
 export default LeftChatBox;
+
