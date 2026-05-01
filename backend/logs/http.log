@@ -2458,3 +2458,7 @@
 [02-05-2026 01:52:14:5214] [32minfo[39m: [32msome one hit get all chats[39m
 [02-05-2026 01:52:15:5215] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 376.089 ms[39m
 [02-05-2026 01:52:16:5216] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f505ccbadd9c3917e579c5 200 - 573.760 ms[39m
+[02-05-2026 02:32:52:3252] [32minfo[39m: [32mServer is running on port 4000[39m
+[02-05-2026 02:33:00:330] [32minfo[39m: [32mServer is running on port 4000[39m
+[02-05-2026 02:33:06:336] [32minfo[39m: [32mServer is running on port 4000[39m
+[02-05-2026 02:33:12:3312] [32minfo[39m: [32mServer is running on port 4000[39m

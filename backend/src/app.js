@@ -70,18 +70,22 @@ app.use(morganMiddleware)
 app.use(cors(corsOptions))
 
 
+//?
+const isProd = process.env.NODE_ENV === 'production';
+const prefix = isProd ? '/backend' : '';
+
 //? socket 
 app.set("io" , io)
 intitializeSocketIO(io)
 
 //? Auth Routes
-app.use("/api/v1/users" , userRouter)
+app.use(`${prefix}/api/v1/users`, userRouter);
 
 //? Chat Routes
-app.use("/api/v1/chats" , chatRouter)
+app.use(`${prefix}/api/v1/chats`, chatRouter);
 
 //? Message Routes
-app.use("/api/v1/message" , messageRouter)
+app.use(`${prefix}/api/v1/message`, messageRouter);
 
 
 //? Health check
