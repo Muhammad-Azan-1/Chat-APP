@@ -101,7 +101,7 @@ const AddChatButton = () => {
         );
         const data = await res.json();
 
-        console.log("RESPONSE", data);
+        // console.log("RESPONSE", data);
 
         if (data.success && data.data) {
           // Filter out the logged-in user from search results
@@ -109,7 +109,7 @@ const AddChatButton = () => {
           setSearchResults(filteredResults);
         }
       } catch (error: any) {
-        console.error("Search failed:", error);
+        // console.error("Search failed:", error);
         setError(error);
       } finally {
         setLoading2(false);
@@ -120,7 +120,7 @@ const AddChatButton = () => {
 
 
   const handleCreateChat = async () => {
-    console.log("Handle create chat called");
+    // console.log("Handle create chat called");
 
     if (!selectedUserId) {
       setError("Please select a user to create a chat");
@@ -152,7 +152,7 @@ const AddChatButton = () => {
         throw new Error(errorData.message || "Something went wrong while creating chat");
       }
       let data = await response.json();
-      console.log("Chat created successfully", data);
+      // console.log("Chat created successfully", data);
 
       const formattedChats = transformBackendChatToUI(data.data, details?._id);
 
@@ -168,7 +168,7 @@ const AddChatButton = () => {
       setError("");
       setIsOpen(false);
     } catch (error: any) {
-      console.error(error);
+      // console.error(error);
       setError(error.message || "Failed to create chat");
     } finally {
       setLoading(false);

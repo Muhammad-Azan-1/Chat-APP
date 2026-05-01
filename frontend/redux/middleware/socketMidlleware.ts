@@ -18,6 +18,7 @@ import {
 // so TypeScript stops complaining and lets us save the socket connection persistently!
 const globalForSocket = globalThis as unknown as {
   socketInstance: Socket | null;
+  listenersAttached: boolean;
 };
 
 // Initialize it safely if it doesn't exist
@@ -25,68 +26,237 @@ if (globalForSocket.socketInstance === undefined) {
   globalForSocket.socketInstance = null;
 }
 
-const socketMiddleware: Middleware = (store) => (next) => (action: any) => {
-  // Test logging - remove these after testing
-  // console.log('=== SOCKET MIDDLEWARE ===')
-  // console.log("Action" , action)
-  // console.log('Action Type:', action.type)
-  // console.log('Action Payload:', action.payload)
+if (globalForSocket.listenersAttached === undefined) {
+  globalForSocket.listenersAttached = false;
+}
 
-  // Handle CONNECT_SOCKET action
+// Track if listeners have been set up to avoid duplicates
+const socketMiddleware: Middleware = (store) => (next) => (action: any) => {
+
+  // Function to set up socket event listeners (only called once per socket instance)
+  const setupSocketEvents = (socket: Socket) => {
+    // Skip if listeners are already set up for this socket instance
+    if (globalForSocket.listenersAttached) {
+      // console.log("⚠️ Socket listeners already set up, skipping...");
+      return;
+    }
+
+    // console.log("🔧 Setting up socket event listeners...");
+    globalForSocket.listenersAttached = true;
+
+    // Listen for backend's custom 'connected' event
+    socket.on("connected", () => {
+      // console.log("✅ Socket connected successfully!", socket.id);
+      store.dispatch(SOCKET_CONNECTED());
+    });
+
+    // Listen for disconnect
+    socket.on("disconnect", (reason) => {
+      // console.log("⚠️ Socket disconnected:", reason);
+      store.dispatch(SOCKET_DISCONNECTED());
+      // console.log("🔄 Socket.io will attempt to reconnect...");
+    });
+
+    // Listen for connection errors
+    socket.on("connect_error", (error) => {
+      // console.error("❌ Socket connection error:", error.message);
+      store.dispatch(SOCKET_ERROR(error.message));
+    });
+
+    // Listen for chat events (keeping for future use, but not adding to Redux immediately)
+    socket.on("newChat", (data) => {
+      // console.log("📨 New chat created (not adding to list until first message):", data._id);
+    });
+
+    // Listen for message events
+    socket.on("messageReceived", async (data) => {
+      // console.log("New message received:", data);
+      const currentUserId = store.getState().auth.details?._id;
+      // console.log("Current user ID in middleware:", currentUserId);
+
+      if (currentUserId && data) {
+        const chatId = data.chat;
+
+        // Check if chat exists in Redux
+        const existingChat = store.getState().chat.chats.find((c: any) => c.id === chatId);
+
+        if (!existingChat) {
+          // console.log("🆕 Chat not found in Redux, fetching from backend...");
+
+          // Fetch specific chat from backend
+          try {
+            const response = await fetch(`http://localhost:4000/api/v1/chats/${chatId}`, {
+              credentials: 'include'
+            });
+
+            if (response.ok) {
+              const result = await response.json();
+              const backendChat = result.data;
+
+              // Transform and add to Redux
+              const { transformBackendChatToUI } = await import("@/lib/transformBackendChatToUI");
+              const transformedChat = transformBackendChatToUI(backendChat, currentUserId);
+
+              store.dispatch({
+                type: "chat/ADD_CHAT",
+                payload: transformedChat
+              });
+
+              // console.log("✅ Chat added to Redux:", transformedChat.id, transformedChat.name);
+            }
+          } catch (error) {
+            // console.error("Failed to fetch chat:", error);
+          }
+        }
+
+        // Now add the message
+        // console.log("✅ Dispatching message to Redux for chat:", data.chat);
+        const message = {
+          id: data._id,
+          senderId: data.sender._id,
+          senderName: data.sender.username,
+          senderAvatar: data.sender.avatar,
+          content: data.message,
+          attachments: data.attachements?.map((att: any) => ({ url: att.url })) || [],
+          chatId: data.chat,
+          timestamp: data.createdAt,
+          isOwnMessage: data.sender._id === currentUserId,
+        };
+
+        // console.log("📦 Transformed message object:", { chatId: data.chat, messageId: message.id });
+
+        store.dispatch({
+          type: "message/ADD_MESSAGE",
+          payload: { chatId: data.chat, message }
+        });
+
+        // Check if this chat is currently selected/open
+        const currentlySelectedChatId = store.getState().chat.currentlySelectedChatId;
+        const isCurrentChat = currentlySelectedChatId === data.chat;
+
+        store.dispatch({
+          type: "chat/UPDATE_CHAT_ON_MESSAGE",
+          payload: {
+            chatId: data.chat,
+            message: data.message,
+            senderName: data.sender.username,
+            timestamp: data.createdAt,
+            isCurrentChat: isCurrentChat
+          }
+        });
+
+        // console.log("🚀 Dispatch completed. Current state:", store.getState().message.messages[data.chat]?.length || 0, "messages");
+        // console.log("📊 FULL STATE FOR THIS USER:", {
+        //   userId: currentUserId,
+        //   allChats: store.getState().chat.chats.map((c: any) => c.id),
+        //   allMessageChatIds: Object.keys(store.getState().message.messages),
+        //   thisChat: store.getState().message.messages[data.chat]
+        // });
+
+      }
+    });
+
+    socket.on("messageDeleted", (data) => {
+      // console.log("Message deleted:", data);
+      // Remove message from Redux
+      if (data && data._id && data.chat) {
+        store.dispatch({
+          type: "message/DELETE_MESSAGE",
+          payload: { chatId: data.chat, messageId: data._id }
+        });
+      }
+    });
+
+    // Listen for typing events
+    socket.on("typing", (chatId) => {
+      // console.log("User is typing in chat:", chatId);
+      store.dispatch({
+        type: "chat/SET_TYPING",
+        payload: { chatId, isTyping: true }
+      });
+    });
+
+    // Listen for stop typing events
+    socket.on("stopTyping", (chatId) => {
+      // console.log("User stopped typing in chat:", chatId);
+      store.dispatch({
+        type: "chat/SET_TYPING",
+        payload: { chatId, isTyping: false }
+      });
+    });
+  };
+  
+
+  //? Handle CONNECT_SOCKET action
 
   if (action.type === "socket/CONNECT_SOCKET") {
     // console.log("received socket connection request")
 
-    if (globalForSocket.socketInstance) {
-      // console.log("Connection attempt already in progress or established")
+    if (globalForSocket.socketInstance?.connected) {
+      // console.log("Socket already connected");
       return next(action);
     }
 
-    //? 1. Initialize the connection
-    globalForSocket.socketInstance = io("http://localhost:4000", { withCredentials: true });
+    if (globalForSocket.socketInstance && !globalForSocket.socketInstance.connected) {
+      // console.log("Socket exists but disconnected, reconnecting...");
+      globalForSocket.socketInstance.connect();
+      return next(action);
+    }
 
-    //? 2. Listen for the 'connected' event emitted by backend
-    globalForSocket.socketInstance.on("connected", () => {
-      console.log(
-        "Socket connected successfully!",
-        globalForSocket.socketInstance?.id,
-      );
+    //? 1. Initialize the connection with auto-reconnect enabled
+    // console.log("🔌 Initializing new socket connection...");
+
+    // Reset listener flag since we're creating a new socket instance
+    globalForSocket.listenersAttached = false;
+
+    globalForSocket.socketInstance = io("http://localhost:4000", {
+      withCredentials: true,
+      reconnection: true,
+      reconnectionAttempts: Infinity,
+      reconnectionDelay: 1000,
+      reconnectionDelayMax: 5000,
+      timeout: 20000,
+    });
+
+    const socket = globalForSocket.socketInstance;
+
+    // Set up socket event listeners
+    setupSocketEvents(socket);
+
+    // Set up manager-level reconnection handlers (only once)
+    socket.io.on("reconnect_attempt", (attempt) => {
+      // console.log(`🔄 Reconnection attempt #${attempt}...`);
+    });
+
+    socket.io.on("reconnect", (attempt) => {
+      // console.log(`✅ Reconnected successfully after ${attempt} attempts!`);
       store.dispatch(SOCKET_CONNECTED());
+      // Listeners persist across reconnections, no need to re-setup
     });
 
-    //? 3. Listen for the 'disconnect' event emitted by backend
-    globalForSocket.socketInstance.on("disconnect", () => {
-      console.log("Socket disconnected", globalForSocket.socketInstance?.id);
-      store.dispatch(SOCKET_DISCONNECTED());
-      globalForSocket.socketInstance = null;
+    socket.io.on("reconnect_error", (error) => {
+      // console.error("❌ Reconnection error:", error.message);
     });
 
-    //? 4. Listen for the 'connect_error' event emitted by socket it self
-    globalForSocket.socketInstance.on("connect_error", (error) => {
-      console.error("Socket connection error:", error);
-      store.dispatch(SOCKET_ERROR(error.message));
-      globalForSocket.socketInstance = null;
+    socket.io.on("reconnect_failed", () => {
+      // console.error("❌ Reconnection failed after all attempts");
+      store.dispatch(SOCKET_ERROR("Failed to reconnect"));
     });
 
-    // Listen for chat events
-    globalForSocket.socketInstance.on("newChat", (data) => {
-      console.log("New chat received:", data);
-    });
 
-    globalForSocket.socketInstance.on("messageReceived", (data) => {
-      console.log("New message received:", data);
-    });
-
-    
     // for CONNECT_SOCKET action
     // console.log("RUnning first next return")
     return next(action);
   }
 
-  if (action.type === "socket/SOCKET_DISCONNECTED") {
+  // Handle manual disconnect action (only for logout or explicit disconnect)
+  if (action.type === "socket/DISCONNECT_SOCKET") {
     if (globalForSocket.socketInstance) {
+      // console.log("🔌 Manually disconnecting socket...");
       globalForSocket.socketInstance.disconnect();
       globalForSocket.socketInstance = null;
+      // Reset listener flag so they can be set up again on next connection
+      globalForSocket.listenersAttached = false;
     }
   }
 

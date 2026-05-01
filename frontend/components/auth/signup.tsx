@@ -73,7 +73,7 @@ const Signup = () => {
 
       if (!response.ok) {
          if (response.status === 429) {
-          console.log("rate limit exceeded", response);
+          // console.log("rate limit exceeded", response);
 
           setCooldown(60);
           setRateLimitMessage(

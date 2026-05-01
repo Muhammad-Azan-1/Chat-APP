@@ -75,7 +75,7 @@ const Login = () => {
       setSuccessMessage("Login successful! Redirecting...");
       setTimeout(() => router.push(redirectParam ? redirectParam : "/chat"), 1500);
     } catch (err: any) {
-      console.log(err.message);
+      // console.log(err.message);
       setError(
         err.message || "An unexpected error occurred. Please try again.",
       );

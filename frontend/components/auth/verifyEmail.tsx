@@ -29,7 +29,7 @@ const VerifyEmail = () => {
   const { cooldown, setCooldown } = useAuthCooldown("verify");
 
   const handleOtpChange = (index: number, value: string) => {
-    console.log("value", value, "index", index);
+    // console.log("value", value, "index", index);
     if (!/^\d*$/.test(value)) return; // only digits
 
     const newOtp = [...otp];
@@ -47,11 +47,11 @@ const VerifyEmail = () => {
     index: number,
     e: React.KeyboardEvent<HTMLInputElement>,
   ) => {
-    console.log(
-      "function running bcz of keydown (backspace or delete is clicked)",
-      otp[index],
-      index,
-    );
+    // console.log(
+    //   "function running bcz of keydown (backspace or delete is clicked)",
+    //   otp[index],
+    //   index,
+    // );
     if (e.key === "Backspace" && !otp[index] && index > 0) {
       inputRefs.current[index - 1]?.focus();
     }
@@ -60,12 +60,12 @@ const VerifyEmail = () => {
   const handlePaste = (e: React.ClipboardEvent) => {
     e.preventDefault();
     const pastedData = e.clipboardData.getData("text").trim();
-    console.log(pastedData, "Pasted Data");
+    // console.log(pastedData, "Pasted Data");
     if (!/^\d+$/.test(pastedData)) return; // check if the pasted data is only digits
 
     const digits = pastedData.slice(0, 6).split("");
     const newOtp = [...otp];
-    console.log(newOtp, "newOTP");
+    // console.log(newOtp, "newOTP");
     digits.forEach((digit, i) => {
       newOtp[i] = digit;
     });

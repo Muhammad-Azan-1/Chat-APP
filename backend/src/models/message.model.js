@@ -13,14 +13,13 @@ const messageSchema = new Schema({
 
     message : {
         type : String,
-        required : true
+        required : false
     },
 
     attachements : {
         type : [
             {
-                url : String,
-                localPath : String
+                url : String
             }
         ],
          default : []
@@ -32,10 +31,10 @@ const messageSchema = new Schema({
         required : true
     }
 
-   
 
 
-})
+
+}, { timestamps: true })
 
 
 

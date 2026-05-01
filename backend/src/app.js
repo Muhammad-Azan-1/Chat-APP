@@ -31,7 +31,7 @@ const io = new  Server(server,{
 // send a ping packet to the frontend
 
 // After sending the ping packet, the server waits 60 seconds. If the React frontend doesn't reply "Yes,
-// I'm here!" means doesnot reply with (Pong) packet within those 60 seconds, the server officially kills 
+// I'm here!" means does not reply with (Pong) packet within those 60 seconds, the server officially kills 
 // the connection and logs "User disconnected".
 
 

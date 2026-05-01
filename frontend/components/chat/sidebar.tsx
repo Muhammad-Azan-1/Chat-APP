@@ -78,7 +78,7 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen, selectedChat }: Props) => {
       setShowDeleteDialog(false);
       setIsSidebarOpen?.(false);
     } catch (error: any) {
-      console.error("Delete chat error:", error);
+      // console.error("Delete chat error:", error);
       setDeleteError(error.message || "Something went wrong while deleting chat");
     } finally {
       setIsDeleting(false);

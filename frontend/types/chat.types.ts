@@ -21,8 +21,8 @@ export interface BackendLastMessage {
 _id: string;
   message: string;
   sender: BackendParticipant;
-  attachements: BackendAttachment[]; 
-  chat: string; 
+  attachements: BackendAttachment[];
+  chat: string;
   createdAt: string;
   updatedAt: string;
 }
@@ -44,6 +44,36 @@ export interface BackendChatPayload {
 }
 
 
+// ─── MESSAGE TYPES ──────────────────────────────────────────────────────
+
+export interface BackendMessage {
+  _id: string;
+  sender: BackendParticipant;
+  message: string;
+  attachements: BackendAttachment[];
+  chat: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface Message {
+  id: string;
+  senderId: string;
+  senderName: string;
+  senderAvatar: string;
+  content: string;
+  attachments: { url: string }[];
+  chatId: string;
+  timestamp: string;
+  isOwnMessage?: boolean;
+}
+
+export interface MessageState {
+  messages: { [chatId: string]: Message[] };
+  loading: boolean;
+  error: string | null;
+}
+
 
 // ─── 2. FRONTEND UI TYPES (Slightly Refined) ──────────────────────────────
 
@@ -56,7 +86,7 @@ export type SelectedChat = {
   isGroup: boolean;
   groupAvatar?: string | string[]; // Made this an array based on your mock data usage
   lastMessage?: string;
-  lastSender?: string;     
+  lastSender?: string;
   time?: string;
   unreadCount?: number;
   rawParticipants?: BackendParticipant[]; // Helpful to keep around for future logic

@@ -27,6 +27,48 @@ const mountTypingEvent = (socket) =>{
 
 }
 
+
+//  When User A types, here's what happens:                                                                                                                     
+                                                                                                                                                            
+//   // User A's frontend                                                                                                                                        
+//   socket.emit("typing", chatId)  // This goes through User A's socket connection                                                                              
+                                                                                                                                                              
+//   On the backend:                                                                                                                                             
+//   const mountTypingEvent = (socket) => {                                                                                                                      
+//       socket.on(ChatEventEnum.TYPING_EVENT, (chatId) => {                                                                                                     
+//           socket.in(chatId).emit(ChatEventEnum.TYPING_EVENT, chatId)                                                                                          
+//       })                                                                                                                                                      
+//   }                                                                                                                                                           
+                                                                                                                                                              
+//   The socket parameter is User A's specific socket connection!                                                                                                
+                                                                                                                                                              
+//   Visual Breakdown                                                                                                                                            
+                                                                                                                                                              
+//   Backend has 3 socket connections:                                                                                                                           
+//   ├── socket_A (User A's connection)                                                                                                                          
+//   ├── socket_B (User B's connection)                                                                                                                          
+//   └── socket_C (User C's connection)                                                                                                                          
+                                                                                                                                                              
+//   When User A types:                                                                                                                                          
+//       ↓                                                                                                                                                       
+//   Event arrives through socket_A                                                                                                                              
+//       ↓                                                                                                                                                       
+//   Backend executes: socket_A.in(chatId).emit("typing", chatId)                                                                                                
+//       ↓                                                                                                                                                       
+//   Broadcasts to everyone in chatId EXCEPT socket_A                                                                                                            
+//       ↓                                                                                                                                                       
+//   socket_B receives ✅                                                                                                                                        
+//   socket_C receives ✅                                                                                                                                        
+//   socket_A does NOT receive ❌                                                                                                                                
+                                                                                                                                                              
+//   The Key Insight                                                                                                                                             
+                                                                                                                                                              
+//   Each user has their own unique socket connection. When you call socket.on(), that socket variable is bound to that specific user's connection.              
+                                                                                                                                                            
+//   So:                                                                                                                                                         
+//   - socket.in(chatId) = "From THIS specific user's socket, broadcast to others"                                                                             
+//   - io.in(chatId) = "From the server (no specific user), broadcast to everyone" 
+
 //? This function is responsible to emit the stopped typing event to the other participants of the chat
 
 const mountStoppedTypingEvent = (socket) => {
@@ -38,9 +80,10 @@ const mountStoppedTypingEvent = (socket) => {
 
 
 const intitializeSocketIO = (io) =>{
-    console.log("Function called")
+    console.log("Socket.IO initialized")
 
     return io.on("connect" , async (socket) =>{
+     console.log("🔌 New connection attempt - Socket ID:", socket.id)
      try {
 
         //1
@@ -126,7 +169,7 @@ const intitializeSocketIO = (io) =>{
 }
 
 const emitSocketEvents = (req , roomId , event , payload) =>{
-
+        console.log("Event" , event , "is emitted")
     req.app.get('io').in(roomId).emit(event , payload) 
     // for emitting message into a roomId ensure that room with this Id must already exists
     // and we have already created the Room with every user id inside the intitializeSocketIO function

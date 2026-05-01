@@ -1273,3 +1273,1039 @@
 [30-04-2026 04:11:39:1139] [32minfo[39m: [32mServer is running on port 4000[39m
 [30-04-2026 04:18:37:1837] [32minfo[39m: [32mServer is running on port 4000[39m
 [30-04-2026 04:24:31:2431] [32minfo[39m: [32mServer is running on port 4000[39m
+[30-04-2026 15:22:48:2248] [32minfo[39m: [32mServer is running on port 4000[39m
+[30-04-2026 15:22:50:2250] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 15:22:50:2250] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 390.925 ms[39m
+[30-04-2026 15:22:51:2251] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 15:22:51:2251] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 397.413 ms[39m
+[30-04-2026 15:23:13:2313] [35mhttp[39m: [35m::1 GET /api/v1/users/search?query=azan 304 - 431.481 ms[39m
+[30-04-2026 15:23:15:2315] [35mhttp[39m: [35m::1 POST /api/v1/chats/create/69edd8e6514e3c7bed4af4a8 200 - 661.182 ms[39m
+[30-04-2026 15:23:22:2322] [35mhttp[39m: [35m::1 DELETE /api/v1/chats/delete/69f28276c5be43d5984ffbed 200 - 601.815 ms[39m
+[30-04-2026 15:23:31:2331] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 15:23:31:2331] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 397.423 ms[39m
+[30-04-2026 15:23:31:2331] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 15:23:32:2332] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 383.847 ms[39m
+[30-04-2026 15:24:12:2412] [35mhttp[39m: [35m::1 POST /api/v1/users/googleAuth 200 - 1558.004 ms[39m
+[30-04-2026 15:24:17:2417] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 15:24:17:2417] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 657.560 ms[39m
+[30-04-2026 15:24:17:2417] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 15:24:17:2417] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 377.335 ms[39m
+[30-04-2026 15:24:19:2419] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 15:24:19:2419] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 378.168 ms[39m
+[30-04-2026 15:24:19:2419] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 15:24:20:2420] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 386.056 ms[39m
+[30-04-2026 15:24:23:2423] [35mhttp[39m: [35m::1 GET /api/v1/users/search?query=Azan 200 - 692.819 ms[39m
+[30-04-2026 15:24:25:2425] [35mhttp[39m: [35m::1 POST /api/v1/chats/create/69edd901514e3c7bed4af4a9 200 - 939.577 ms[39m
+[30-04-2026 15:44:12:4412] [32minfo[39m: [32mServer is running on port 4000[39m
+[30-04-2026 15:44:51:4451] [32minfo[39m: [32mServer is running on port 4000[39m
+[30-04-2026 15:45:02:452] [32minfo[39m: [32mServer is running on port 4000[39m
+[30-04-2026 15:45:30:4530] [32minfo[39m: [32mServer is running on port 4000[39m
+[30-04-2026 15:45:52:4552] [32minfo[39m: [32mServer is running on port 4000[39m
+[30-04-2026 15:50:06:506] [32minfo[39m: [32mServer is running on port 4000[39m
+[30-04-2026 15:50:28:5028] [32minfo[39m: [32mServer is running on port 4000[39m
+[30-04-2026 15:53:40:5340] [32minfo[39m: [32mServer is running on port 4000[39m
+[30-04-2026 15:54:22:5422] [32minfo[39m: [32mServer is running on port 4000[39m
+[30-04-2026 16:05:25:525] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:05:25:525] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:05:25:525] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[30-04-2026 16:05:25:525] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[30-04-2026 16:05:25:525] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:05:26:526] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 410.060 ms[39m
+[30-04-2026 16:05:26:526] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:05:26:526] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 427.058 ms[39m
+[30-04-2026 16:05:27:527] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:05:27:527] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 1700.509 ms[39m
+[30-04-2026 16:05:27:527] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:05:27:527] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 383.981 ms[39m
+[30-04-2026 16:06:41:641] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:06:41:641] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:06:41:641] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 387.488 ms[39m
+[30-04-2026 16:06:41:641] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 469.004 ms[39m
+[30-04-2026 16:25:55:2555] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:25:56:2556] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 417.986 ms[39m
+[30-04-2026 16:25:56:2556] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:25:56:2556] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 396.005 ms[39m
+[30-04-2026 16:27:30:2730] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:27:30:2730] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 568.420 ms[39m
+[30-04-2026 16:27:31:2731] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:27:31:2731] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 394.245 ms[39m
+[30-04-2026 16:29:05:295] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:29:05:295] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 390.207 ms[39m
+[30-04-2026 16:29:05:295] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:29:05:295] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 389.991 ms[39m
+[30-04-2026 16:29:12:2912] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:29:12:2912] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 389.040 ms[39m
+[30-04-2026 16:29:13:2913] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:29:13:2913] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 395.259 ms[39m
+[30-04-2026 16:29:21:2921] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:29:21:2921] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 389.368 ms[39m
+[30-04-2026 16:29:21:2921] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:29:21:2921] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 427.453 ms[39m
+[30-04-2026 16:30:56:3056] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:30:56:3056] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 395.640 ms[39m
+[30-04-2026 16:30:56:3056] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:30:56:3056] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 388.840 ms[39m
+[30-04-2026 16:31:01:311] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:31:01:311] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 387.988 ms[39m
+[30-04-2026 16:31:01:311] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:31:01:311] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 392.087 ms[39m
+[30-04-2026 16:32:37:3237] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:32:37:3237] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 543.725 ms[39m
+[30-04-2026 16:32:37:3237] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:32:38:3238] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 435.462 ms[39m
+[30-04-2026 16:34:05:345] [31merror[39m: [31mToken expired[39m
+[30-04-2026 16:34:05:345] [31merror[39m: [31mToken expired[39m
+[30-04-2026 16:34:05:345] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 401 - 2.914 ms[39m
+[30-04-2026 16:35:14:3514] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 569.242 ms[39m
+[30-04-2026 16:35:26:3526] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:35:27:3527] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 616.874 ms[39m
+[30-04-2026 16:35:27:3527] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:35:27:3527] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 380.358 ms[39m
+[30-04-2026 16:36:41:3641] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 561.428 ms[39m
+[30-04-2026 16:36:47:3647] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 579.631 ms[39m
+[30-04-2026 16:36:53:3653] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 550.964 ms[39m
+[30-04-2026 16:38:28:3828] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:38:29:3829] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 525.354 ms[39m
+[30-04-2026 16:38:29:3829] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:38:29:3829] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 371.893 ms[39m
+[30-04-2026 16:38:30:3830] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 569.442 ms[39m
+[30-04-2026 16:40:24:4024] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:40:24:4024] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 378.152 ms[39m
+[30-04-2026 16:40:25:4025] [32minfo[39m: [32msome one hit get all chats[39m
+[30-04-2026 16:40:25:4025] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 377.471 ms[39m
+[30-04-2026 16:40:25:4025] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 563.440 ms[39m
+[01-05-2026 15:29:13:2913] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 15:32:16:3216] [35mhttp[39m: [35m::1 POST /api/v1/users/googleAuth 200 - 1557.379 ms[39m
+[01-05-2026 15:32:17:3217] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:32:17:3217] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 361.161 ms[39m
+[01-05-2026 15:32:17:3217] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:32:17:3217] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 357.981 ms[39m
+[01-05-2026 15:32:24:3224] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:32:24:3224] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 356.536 ms[39m
+[01-05-2026 15:32:25:3225] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:32:25:3225] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 374.699 ms[39m
+[01-05-2026 15:32:28:3228] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 1587.293 ms[39m
+[01-05-2026 15:33:50:3350] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 532.938 ms[39m
+[01-05-2026 15:34:04:344] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:34:04:344] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 357.399 ms[39m
+[01-05-2026 15:34:04:344] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:34:04:344] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 357.532 ms[39m
+[01-05-2026 15:34:46:3446] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:34:46:3446] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 372.442 ms[39m
+[01-05-2026 15:34:46:3446] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:34:47:3447] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 375.856 ms[39m
+[01-05-2026 15:36:30:3630] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:36:30:3630] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 356.344 ms[39m
+[01-05-2026 15:36:30:3630] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:36:31:3631] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 356.158 ms[39m
+[01-05-2026 15:36:49:3649] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:36:49:3649] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 382.699 ms[39m
+[01-05-2026 15:36:49:3649] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:36:49:3649] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 373.719 ms[39m
+[01-05-2026 15:37:06:376] [35mhttp[39m: [35m::1 POST /api/v1/users/logout 200 - 398.893 ms[39m
+[01-05-2026 15:37:15:3715] [35mhttp[39m: [35m::1 POST /api/v1/users/googleAuth 200 - 1778.342 ms[39m
+[01-05-2026 15:37:16:3716] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:37:16:3716] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 376.867 ms[39m
+[01-05-2026 15:37:16:3716] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:37:17:3717] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 375.270 ms[39m
+[01-05-2026 15:37:25:3725] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 576.372 ms[39m
+[01-05-2026 15:37:54:3754] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:37:54:3754] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 414.614 ms[39m
+[01-05-2026 15:37:55:3755] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:37:55:3755] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 405.401 ms[39m
+[01-05-2026 15:37:56:3756] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 582.189 ms[39m
+[01-05-2026 15:41:16:4116] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 697.711 ms[39m
+[01-05-2026 15:41:31:4131] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 761.395 ms[39m
+[01-05-2026 15:41:36:4136] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 612.307 ms[39m
+[01-05-2026 15:41:54:4154] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 575.339 ms[39m
+[01-05-2026 15:41:58:4158] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 617.805 ms[39m
+[01-05-2026 15:42:04:424] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:42:04:424] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 566.874 ms[39m
+[01-05-2026 15:42:04:424] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:42:05:425] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 432.674 ms[39m
+[01-05-2026 15:43:00:430] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:43:01:431] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 374.037 ms[39m
+[01-05-2026 15:43:01:431] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:43:01:431] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 370.359 ms[39m
+[01-05-2026 15:46:19:4619] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 1086.996 ms[39m
+[01-05-2026 15:49:09:499] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 742.464 ms[39m
+[01-05-2026 15:49:20:4920] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 619.680 ms[39m
+[01-05-2026 15:49:23:4923] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 605.393 ms[39m
+[01-05-2026 15:49:26:4926] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:49:26:4926] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 924.504 ms[39m
+[01-05-2026 15:49:26:4926] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:49:27:4927] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 560.339 ms[39m
+[01-05-2026 15:49:32:4932] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:49:32:4932] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 1921.723 ms[39m
+[01-05-2026 15:49:33:4933] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:49:33:4933] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 379.934 ms[39m
+[01-05-2026 15:49:34:4934] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 627.727 ms[39m
+[01-05-2026 15:50:17:5017] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 15:50:18:5018] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:50:18:5018] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 681.089 ms[39m
+[01-05-2026 15:50:18:5018] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:50:19:5019] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 395.287 ms[39m
+[01-05-2026 15:50:20:5020] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 1119.935 ms[39m
+[01-05-2026 15:50:41:5041] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 608.550 ms[39m
+[01-05-2026 15:50:45:5045] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 1047.898 ms[39m
+[01-05-2026 15:51:59:5159] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f32dd9191ca35024215e50 201 - 1085.582 ms[39m
+[01-05-2026 15:55:41:5541] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 578.493 ms[39m
+[01-05-2026 15:55:46:5546] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 551.188 ms[39m
+[01-05-2026 15:56:07:567] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 554.509 ms[39m
+[01-05-2026 15:56:12:5612] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f32dd9191ca35024215e50 201 - 959.276 ms[39m
+[01-05-2026 15:58:16:5816] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 15:58:29:5829] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 15:58:33:5833] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 15:58:47:5847] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:58:50:5850] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 3630.546 ms[39m
+[01-05-2026 15:58:51:5851] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:58:52:5852] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 2523.369 ms[39m
+[01-05-2026 15:58:55:5855] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 3528.227 ms[39m
+[01-05-2026 15:59:01:591] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f32dd9191ca35024215e50 201 - 2100.323 ms[39m
+[01-05-2026 15:59:28:5928] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:59:28:5928] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 1579.504 ms[39m
+[01-05-2026 15:59:31:5931] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:59:31:5931] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 2880.228 ms[39m
+[01-05-2026 15:59:31:5931] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 1912.078 ms[39m
+[01-05-2026 15:59:37:5937] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f32dd9191ca35024215e50 201 - 1030.627 ms[39m
+[01-05-2026 15:59:41:5941] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:59:41:5941] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 565.476 ms[39m
+[01-05-2026 15:59:41:5941] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 15:59:41:5941] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 552.624 ms[39m
+[01-05-2026 15:59:43:5943] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 563.608 ms[39m
+[01-05-2026 16:02:32:232] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:02:32:232] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:02:33:233] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 369.331 ms[39m
+[01-05-2026 16:02:33:233] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 411.036 ms[39m
+[01-05-2026 16:02:33:233] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 579.679 ms[39m
+[01-05-2026 16:02:34:234] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 1577.489 ms[39m
+[01-05-2026 16:02:42:242] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:02:42:242] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:02:42:242] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 449.776 ms[39m
+[01-05-2026 16:02:43:243] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 729.828 ms[39m
+[01-05-2026 16:02:43:243] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 1464.763 ms[39m
+[01-05-2026 16:02:44:244] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 2176.216 ms[39m
+[01-05-2026 16:03:38:338] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:03:38:338] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 435.301 ms[39m
+[01-05-2026 16:03:38:338] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 585.564 ms[39m
+[01-05-2026 16:03:38:338] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 617.470 ms[39m
+[01-05-2026 16:03:41:341] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:03:42:342] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 1874.186 ms[39m
+[01-05-2026 16:03:42:342] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:03:42:342] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 2119.021 ms[39m
+[01-05-2026 16:03:42:342] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 2142.530 ms[39m
+[01-05-2026 16:03:42:342] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 4488.479 ms[39m
+[01-05-2026 16:03:43:343] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:03:44:344] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:03:46:346] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 3216.089 ms[39m
+[01-05-2026 16:03:46:346] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 3475.697 ms[39m
+[01-05-2026 16:03:46:346] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:03:46:346] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 466.136 ms[39m
+[01-05-2026 16:03:46:346] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 3789.181 ms[39m
+[01-05-2026 16:03:46:346] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 3976.330 ms[39m
+[01-05-2026 16:03:47:347] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 16:03:47:347] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 - - - ms[39m
+[01-05-2026 16:03:47:347] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 16:03:47:347] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 - - - ms[39m
+[01-05-2026 16:03:48:348] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:03:48:348] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:03:48:348] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 644.027 ms[39m
+[01-05-2026 16:03:48:348] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:03:49:349] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:03:49:349] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 463.333 ms[39m
+[01-05-2026 16:03:49:349] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:03:49:349] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:03:49:349] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 1619.856 ms[39m
+[01-05-2026 16:03:49:349] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 424.114 ms[39m
+[01-05-2026 16:03:50:350] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:03:50:350] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 439.397 ms[39m
+[01-05-2026 16:03:50:350] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:03:50:350] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 370.752 ms[39m
+[01-05-2026 16:04:10:410] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:04:10:410] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:04:10:410] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 353.324 ms[39m
+[01-05-2026 16:04:10:410] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 357.479 ms[39m
+[01-05-2026 16:04:33:433] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:04:33:433] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 728.251 ms[39m
+[01-05-2026 16:04:34:434] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:04:34:434] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 1533.303 ms[39m
+[01-05-2026 16:04:48:448] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 16:04:48:448] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 16:04:48:448] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:04:48:448] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:04:48:448] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:04:49:449] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:04:49:449] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 363.125 ms[39m
+[01-05-2026 16:04:49:449] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 355.197 ms[39m
+[01-05-2026 16:04:49:449] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:04:49:449] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:04:49:449] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 352.044 ms[39m
+[01-05-2026 16:04:49:449] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 373.491 ms[39m
+[01-05-2026 16:04:52:452] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:04:52:452] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:04:53:453] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 1017.443 ms[39m
+[01-05-2026 16:04:53:453] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 1429.601 ms[39m
+[01-05-2026 16:04:56:456] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:04:56:456] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:04:56:456] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 504.930 ms[39m
+[01-05-2026 16:04:56:456] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 470.428 ms[39m
+[01-05-2026 16:04:59:459] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:04:59:459] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:04:59:459] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 390.268 ms[39m
+[01-05-2026 16:04:59:459] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 411.679 ms[39m
+[01-05-2026 16:05:02:52] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:02:52] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:02:52] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 363.095 ms[39m
+[01-05-2026 16:05:02:52] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 371.841 ms[39m
+[01-05-2026 16:05:04:54] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 16:05:04:54] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 16:05:04:54] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:04:54] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:04:54] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:05:55] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:05:55] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 357.358 ms[39m
+[01-05-2026 16:05:05:55] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 352.675 ms[39m
+[01-05-2026 16:05:05:55] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:05:55] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:05:55] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 354.013 ms[39m
+[01-05-2026 16:05:05:55] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 357.581 ms[39m
+[01-05-2026 16:05:17:517] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 16:05:17:517] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 16:05:17:517] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:17:517] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:18:518] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:18:518] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:18:518] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 358.049 ms[39m
+[01-05-2026 16:05:18:518] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:18:518] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 580.775 ms[39m
+[01-05-2026 16:05:18:518] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 353.429 ms[39m
+[01-05-2026 16:05:18:518] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:18:518] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 354.618 ms[39m
+[01-05-2026 16:05:19:519] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:19:519] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:19:519] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 355.793 ms[39m
+[01-05-2026 16:05:19:519] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 352.679 ms[39m
+[01-05-2026 16:05:20:520] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:20:520] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:20:520] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 352.537 ms[39m
+[01-05-2026 16:05:21:521] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 365.173 ms[39m
+[01-05-2026 16:05:24:524] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:25:525] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 1154.562 ms[39m
+[01-05-2026 16:05:25:525] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:25:525] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 1392.468 ms[39m
+[01-05-2026 16:05:28:528] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:28:528] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:28:528] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 352.150 ms[39m
+[01-05-2026 16:05:29:529] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 725.165 ms[39m
+[01-05-2026 16:05:34:534] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:34:534] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:34:534] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 353.498 ms[39m
+[01-05-2026 16:05:34:534] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 350.734 ms[39m
+[01-05-2026 16:05:40:540] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:40:540] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:40:540] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 396.390 ms[39m
+[01-05-2026 16:05:40:540] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 380.560 ms[39m
+[01-05-2026 16:05:49:549] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 16:05:49:549] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 16:05:49:549] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:50:550] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:50:550] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:50:550] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:50:550] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 353.501 ms[39m
+[01-05-2026 16:05:50:550] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 368.082 ms[39m
+[01-05-2026 16:05:50:550] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:50:550] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:50:550] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 355.186 ms[39m
+[01-05-2026 16:05:50:550] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 365.173 ms[39m
+[01-05-2026 16:05:50:550] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:51:551] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:51:551] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 371.746 ms[39m
+[01-05-2026 16:05:51:551] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 363.869 ms[39m
+[01-05-2026 16:05:53:553] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:54:554] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:54:554] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 350.212 ms[39m
+[01-05-2026 16:05:54:554] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 355.361 ms[39m
+[01-05-2026 16:05:56:556] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:56:556] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:05:56:556] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 1458.158 ms[39m
+[01-05-2026 16:05:57:557] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 1489.212 ms[39m
+[01-05-2026 16:06:00:60] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:06:00:60] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:06:03:63] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 3595.576 ms[39m
+[01-05-2026 16:06:03:63] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 3692.427 ms[39m
+[01-05-2026 16:06:12:612] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:06:12:612] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:06:12:612] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 1040.133 ms[39m
+[01-05-2026 16:06:12:612] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 1028.952 ms[39m
+[01-05-2026 16:06:19:619] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:06:19:619] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 670.800 ms[39m
+[01-05-2026 16:06:20:620] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:06:20:620] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 1237.609 ms[39m
+[01-05-2026 16:06:24:624] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:06:24:624] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:06:24:624] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 948.028 ms[39m
+[01-05-2026 16:06:26:626] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 16:06:26:626] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 16:06:27:627] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 16:06:27:627] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 16:06:28:628] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:06:28:628] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:06:28:628] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:06:29:629] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:06:30:630] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 2226.177 ms[39m
+[01-05-2026 16:06:30:630] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:06:30:630] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 605.988 ms[39m
+[01-05-2026 16:06:31:631] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:06:31:631] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 3795.065 ms[39m
+[01-05-2026 16:06:31:631] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:06:32:632] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 512.719 ms[39m
+[01-05-2026 16:10:11:1011] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:10:11:1011] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 496.712 ms[39m
+[01-05-2026 16:10:11:1011] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:10:12:1012] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 355.910 ms[39m
+[01-05-2026 16:10:12:1012] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 531.713 ms[39m
+[01-05-2026 16:10:19:1019] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 549.136 ms[39m
+[01-05-2026 16:10:33:1033] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:10:33:1033] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 496.322 ms[39m
+[01-05-2026 16:10:33:1033] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:10:34:1034] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 432.411 ms[39m
+[01-05-2026 16:10:36:1036] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 557.580 ms[39m
+[01-05-2026 16:10:38:1038] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:10:39:1039] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 350.698 ms[39m
+[01-05-2026 16:10:39:1039] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:10:39:1039] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 356.415 ms[39m
+[01-05-2026 16:11:29:1129] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 16:11:42:1142] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 16:13:42:1342] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:13:42:1342] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 365.143 ms[39m
+[01-05-2026 16:13:42:1342] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 540.248 ms[39m
+[01-05-2026 16:13:43:1343] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:13:43:1343] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 1560.815 ms[39m
+[01-05-2026 16:13:58:1358] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 700.827 ms[39m
+[01-05-2026 16:14:01:141] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 555.758 ms[39m
+[01-05-2026 16:14:12:1412] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f32dd9191ca35024215e50 201 - 1101.402 ms[39m
+[01-05-2026 16:18:14:1814] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:18:14:1814] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:18:14:1814] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 376.125 ms[39m
+[01-05-2026 16:18:14:1814] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 355.069 ms[39m
+[01-05-2026 16:18:14:1814] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 536.892 ms[39m
+[01-05-2026 16:19:45:1945] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:19:45:1945] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 390.502 ms[39m
+[01-05-2026 16:19:45:1945] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:19:45:1945] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 365.368 ms[39m
+[01-05-2026 16:19:45:1945] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:19:45:1945] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:19:45:1945] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 350.879 ms[39m
+[01-05-2026 16:19:45:1945] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 372.555 ms[39m
+[01-05-2026 16:20:03:203] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 619.484 ms[39m
+[01-05-2026 16:20:20:2020] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 582.049 ms[39m
+[01-05-2026 16:22:13:2213] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 16:22:13:2213] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 16:22:13:2213] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:22:13:2213] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:22:13:2213] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:22:13:2213] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:22:14:2214] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 1416.369 ms[39m
+[01-05-2026 16:22:14:2214] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:22:15:2215] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 715.264 ms[39m
+[01-05-2026 16:22:15:2215] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 1984.166 ms[39m
+[01-05-2026 16:22:15:2215] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:22:15:2215] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 391.748 ms[39m
+[01-05-2026 16:30:26:3026] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:30:26:3026] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:30:26:3026] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 359.261 ms[39m
+[01-05-2026 16:30:26:3026] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 373.441 ms[39m
+[01-05-2026 16:30:26:3026] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:30:26:3026] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:30:26:3026] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 352.624 ms[39m
+[01-05-2026 16:30:26:3026] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 398.483 ms[39m
+[01-05-2026 16:30:42:3042] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:30:42:3042] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:30:43:3043] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 353.835 ms[39m
+[01-05-2026 16:30:43:3043] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 374.325 ms[39m
+[01-05-2026 16:31:49:3149] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:31:49:3149] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 448.179 ms[39m
+[01-05-2026 16:31:49:3149] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:31:49:3149] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 383.544 ms[39m
+[01-05-2026 16:31:51:3151] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:31:52:3152] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 709.043 ms[39m
+[01-05-2026 16:31:52:3152] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:31:52:3152] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 419.429 ms[39m
+[01-05-2026 16:31:55:3155] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 1056.462 ms[39m
+[01-05-2026 16:32:29:3229] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f32dd9191ca35024215e50 201 - 950.058 ms[39m
+[01-05-2026 16:36:28:3628] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 549.979 ms[39m
+[01-05-2026 16:37:16:3716] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:37:16:3716] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:37:16:3716] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 358.795 ms[39m
+[01-05-2026 16:37:16:3716] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 375.349 ms[39m
+[01-05-2026 16:37:16:3716] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 553.510 ms[39m
+[01-05-2026 16:37:57:3757] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 - - - ms[39m
+[01-05-2026 16:37:58:3758] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:37:58:3758] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 373.183 ms[39m
+[01-05-2026 16:37:58:3758] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:37:59:3759] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 422.232 ms[39m
+[01-05-2026 16:38:00:380] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:38:00:380] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 377.370 ms[39m
+[01-05-2026 16:38:00:380] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:38:00:380] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 375.346 ms[39m
+[01-05-2026 16:38:05:385] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:38:05:385] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:38:05:385] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 413.434 ms[39m
+[01-05-2026 16:38:05:385] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 400.562 ms[39m
+[01-05-2026 16:38:28:3828] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 645.039 ms[39m
+[01-05-2026 16:38:35:3835] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f32dd9191ca35024215e50 201 - 984.796 ms[39m
+[01-05-2026 16:40:36:4036] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 919.920 ms[39m
+[01-05-2026 16:41:26:4126] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 555.288 ms[39m
+[01-05-2026 16:41:57:4157] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:41:57:4157] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:41:57:4157] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 380.271 ms[39m
+[01-05-2026 16:41:57:4157] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 406.879 ms[39m
+[01-05-2026 16:41:58:4158] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 589.947 ms[39m
+[01-05-2026 16:42:56:4256] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:42:57:4257] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 489.239 ms[39m
+[01-05-2026 16:42:57:4257] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:42:57:4257] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 659.137 ms[39m
+[01-05-2026 16:42:59:4259] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:42:59:4259] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 378.462 ms[39m
+[01-05-2026 16:42:59:4259] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:43:00:430] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 647.676 ms[39m
+[01-05-2026 16:43:05:435] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 636.523 ms[39m
+[01-05-2026 16:43:08:438] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f32dd9191ca35024215e50 201 - 958.314 ms[39m
+[01-05-2026 16:44:05:445] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 554.969 ms[39m
+[01-05-2026 16:44:29:4429] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:44:29:4429] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:44:30:4430] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 568.017 ms[39m
+[01-05-2026 16:44:30:4430] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 622.923 ms[39m
+[01-05-2026 16:44:30:4430] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 830.930 ms[39m
+[01-05-2026 16:44:31:4431] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:44:31:4431] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:44:31:4431] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 486.852 ms[39m
+[01-05-2026 16:44:31:4431] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 529.121 ms[39m
+[01-05-2026 16:44:31:4431] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 304 - 766.785 ms[39m
+[01-05-2026 16:50:16:5016] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 16:51:06:516] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 - - - ms[39m
+[01-05-2026 16:51:06:516] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 16:51:06:516] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:51:06:516] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:51:06:516] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 16:51:06:516] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:51:07:517] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 786.147 ms[39m
+[01-05-2026 16:51:07:517] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:51:07:517] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:51:07:517] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 1290.153 ms[39m
+[01-05-2026 16:51:07:517] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 375.730 ms[39m
+[01-05-2026 16:51:07:517] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:51:08:518] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 353.327 ms[39m
+[01-05-2026 16:54:23:5423] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:54:23:5423] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:54:23:5423] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 357.625 ms[39m
+[01-05-2026 16:54:23:5423] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 372.675 ms[39m
+[01-05-2026 16:54:42:5442] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:54:42:5442] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:54:43:5443] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 354.356 ms[39m
+[01-05-2026 16:54:43:5443] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 370.468 ms[39m
+[01-05-2026 16:56:55:5655] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:56:55:5655] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:56:55:5655] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 386.441 ms[39m
+[01-05-2026 16:56:55:5655] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 417.752 ms[39m
+[01-05-2026 16:57:35:5735] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 16:57:46:5746] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 16:58:01:581] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:58:01:581] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 16:58:01:581] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 351.569 ms[39m
+[01-05-2026 16:58:01:581] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 369.092 ms[39m
+[01-05-2026 16:58:53:5853] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 200 - 573.696 ms[39m
+[01-05-2026 16:58:55:5855] [35mhttp[39m: [35m::1 DELETE /api/v1/chats/delete/69f32dd9191ca35024215e50 200 - 540.837 ms[39m
+[01-05-2026 17:06:49:649] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:06:49:649] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:06:49:649] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 379.822 ms[39m
+[01-05-2026 17:06:49:649] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 380.697 ms[39m
+[01-05-2026 17:06:49:649] [31merror[39m: [31mChat does not exist[39m
+[01-05-2026 17:06:49:649] [31merror[39m: [31mChat does not exist[39m
+[01-05-2026 17:06:49:649] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f32dd9191ca35024215e50 404 - 397.724 ms[39m
+[01-05-2026 17:08:00:80] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:08:01:81] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 383.994 ms[39m
+[01-05-2026 17:08:01:81] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:08:01:81] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 375.708 ms[39m
+[01-05-2026 17:08:11:811] [35mhttp[39m: [35m::1 GET /api/v1/users/search?query=muhamad 200 - 426.276 ms[39m
+[01-05-2026 17:08:14:814] [35mhttp[39m: [35m::1 GET /api/v1/users/search?query=muha 200 - 489.404 ms[39m
+[01-05-2026 17:08:19:819] [35mhttp[39m: [35m::1 POST /api/v1/chats/create/69edd901514e3c7bed4af4a9 200 - 1057.199 ms[39m
+[01-05-2026 17:08:47:847] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 200 - 564.274 ms[39m
+[01-05-2026 17:09:48:948] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f497b3e65fa3c0d6380903 201 - 952.288 ms[39m
+[01-05-2026 17:09:48:948] [35mhttp[39m: [35m::1 GET /api/v1/chats/69f497b3e65fa3c0d6380903 200 - 370.037 ms[39m
+[01-05-2026 17:11:43:1143] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 17:11:49:1149] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:11:49:1149] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:11:49:1149] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 539.285 ms[39m
+[01-05-2026 17:11:49:1149] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 503.491 ms[39m
+[01-05-2026 17:11:49:1149] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:11:49:1149] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:11:49:1149] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 379.170 ms[39m
+[01-05-2026 17:11:50:1150] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 377.235 ms[39m
+[01-05-2026 17:11:52:1152] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 200 - 565.537 ms[39m
+[01-05-2026 17:11:55:1155] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 17:11:55:1155] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:11:56:1156] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:11:56:1156] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 355.502 ms[39m
+[01-05-2026 17:11:56:1156] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:11:56:1156] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 370.535 ms[39m
+[01-05-2026 17:11:57:1157] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:11:57:1157] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 378.695 ms[39m
+[01-05-2026 17:11:58:1158] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:11:58:1158] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 367.114 ms[39m
+[01-05-2026 17:12:13:1213] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 200 - 589.577 ms[39m
+[01-05-2026 17:12:19:1219] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 200 - 548.396 ms[39m
+[01-05-2026 17:12:21:1221] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:12:21:1221] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 374.610 ms[39m
+[01-05-2026 17:12:21:1221] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:12:21:1221] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 371.278 ms[39m
+[01-05-2026 17:12:21:1221] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:12:22:1222] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 374.859 ms[39m
+[01-05-2026 17:12:22:1222] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:12:22:1222] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 378.893 ms[39m
+[01-05-2026 17:12:24:1224] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 304 - 555.000 ms[39m
+[01-05-2026 17:12:31:1231] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f497b3e65fa3c0d6380903 201 - 991.440 ms[39m
+[01-05-2026 17:12:31:1231] [35mhttp[39m: [35m::1 GET /api/v1/chats/69f497b3e65fa3c0d6380903 200 - 382.608 ms[39m
+[01-05-2026 17:18:43:1843] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 17:19:46:1946] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 200 - 557.823 ms[39m
+[01-05-2026 17:19:50:1950] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f497b3e65fa3c0d6380903 201 - 921.487 ms[39m
+[01-05-2026 17:20:16:2016] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:20:16:2016] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 361.987 ms[39m
+[01-05-2026 17:20:16:2016] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:20:16:2016] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 363.824 ms[39m
+[01-05-2026 17:20:18:2018] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 200 - 541.336 ms[39m
+[01-05-2026 17:20:23:2023] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f497b3e65fa3c0d6380903 201 - 900.847 ms[39m
+[01-05-2026 17:24:33:2433] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:24:33:2433] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 434.126 ms[39m
+[01-05-2026 17:24:33:2433] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 200 - 563.260 ms[39m
+[01-05-2026 17:24:35:2435] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:24:35:2435] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 2577.821 ms[39m
+[01-05-2026 17:24:35:2435] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 200 - 2756.719 ms[39m
+[01-05-2026 17:24:46:2446] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:24:46:2446] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:24:46:2446] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 450.575 ms[39m
+[01-05-2026 17:24:46:2446] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 511.982 ms[39m
+[01-05-2026 17:24:46:2446] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 304 - 668.332 ms[39m
+[01-05-2026 17:24:46:2446] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 304 - 1038.733 ms[39m
+[01-05-2026 17:25:09:259] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:25:09:259] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:25:09:259] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 367.390 ms[39m
+[01-05-2026 17:25:09:259] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 380.118 ms[39m
+[01-05-2026 17:25:09:259] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 304 - 593.611 ms[39m
+[01-05-2026 17:25:09:259] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 304 - 588.663 ms[39m
+[01-05-2026 17:25:21:2521] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 304 - 573.200 ms[39m
+[01-05-2026 17:25:21:2521] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 304 - 562.867 ms[39m
+[01-05-2026 17:25:39:2539] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 17:25:39:2539] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats - - - ms[39m
+[01-05-2026 17:25:39:2539] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:25:39:2539] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:25:40:2540] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:25:40:2540] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:25:40:2540] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 374.946 ms[39m
+[01-05-2026 17:25:40:2540] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 379.748 ms[39m
+[01-05-2026 17:25:41:2541] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:25:41:2541] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:25:41:2541] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 380.624 ms[39m
+[01-05-2026 17:25:41:2541] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 398.299 ms[39m
+[01-05-2026 17:47:01:471] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 304 - 1722.976 ms[39m
+[01-05-2026 17:47:03:473] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 304 - 531.861 ms[39m
+[01-05-2026 17:47:07:477] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f497b3e65fa3c0d6380903 201 - 907.797 ms[39m
+[01-05-2026 17:47:27:4727] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f497b3e65fa3c0d6380903 201 - 894.949 ms[39m
+[01-05-2026 17:48:05:485] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f497b3e65fa3c0d6380903 201 - 879.449 ms[39m
+[01-05-2026 17:48:59:4859] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:49:00:490] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 1661.746 ms[39m
+[01-05-2026 17:49:00:490] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 200 - 2001.241 ms[39m
+[01-05-2026 17:49:01:491] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:49:01:491] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 200 - 2435.275 ms[39m
+[01-05-2026 17:49:01:491] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 2564.665 ms[39m
+[01-05-2026 17:49:32:4932] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:49:32:4932] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:49:33:4933] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 386.299 ms[39m
+[01-05-2026 17:49:33:4933] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 304 - 561.112 ms[39m
+[01-05-2026 17:49:34:4934] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 304 - 1658.722 ms[39m
+[01-05-2026 17:49:34:4934] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 1707.111 ms[39m
+[01-05-2026 17:50:26:5026] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:50:26:5026] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:50:26:5026] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 388.923 ms[39m
+[01-05-2026 17:50:26:5026] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 370.090 ms[39m
+[01-05-2026 17:50:26:5026] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 304 - 564.015 ms[39m
+[01-05-2026 17:50:26:5026] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 304 - 530.497 ms[39m
+[01-05-2026 17:54:32:5432] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 17:55:24:5524] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f497b3e65fa3c0d6380903 201 - 975.612 ms[39m
+[01-05-2026 17:55:59:5559] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f497b3e65fa3c0d6380903 201 - 1023.664 ms[39m
+[01-05-2026 17:58:09:589] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:58:09:589] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 900.637 ms[39m
+[01-05-2026 17:58:09:589] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:58:10:5810] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 835.409 ms[39m
+[01-05-2026 17:58:10:5810] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 200 - 1756.796 ms[39m
+[01-05-2026 17:58:12:5812] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 200 - 2821.596 ms[39m
+[01-05-2026 17:58:34:5834] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 17:59:19:5919] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:59:19:5919] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:59:19:5919] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 375.045 ms[39m
+[01-05-2026 17:59:19:5919] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 376.706 ms[39m
+[01-05-2026 17:59:19:5919] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 304 - 540.246 ms[39m
+[01-05-2026 17:59:19:5919] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 304 - 576.500 ms[39m
+[01-05-2026 17:59:34:5934] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:59:34:5934] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 17:59:34:5934] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 398.471 ms[39m
+[01-05-2026 17:59:34:5934] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 410.531 ms[39m
+[01-05-2026 17:59:35:5935] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 304 - 561.474 ms[39m
+[01-05-2026 17:59:35:5935] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 304 - 611.263 ms[39m
+[01-05-2026 18:00:38:038] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f497b3e65fa3c0d6380903 201 - 1082.226 ms[39m
+[01-05-2026 18:00:46:046] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f497b3e65fa3c0d6380903 201 - 1020.354 ms[39m
+[01-05-2026 18:01:05:15] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f497b3e65fa3c0d6380903 201 - 1007.939 ms[39m
+[01-05-2026 18:01:26:126] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 18:01:37:137] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 18:02:29:229] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 200 - 662.678 ms[39m
+[01-05-2026 18:02:31:231] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:02:32:232] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 200 - 656.412 ms[39m
+[01-05-2026 18:02:32:232] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 1288.240 ms[39m
+[01-05-2026 18:02:32:232] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:02:32:232] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 304 - 1519.004 ms[39m
+[01-05-2026 18:02:33:233] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 1278.534 ms[39m
+[01-05-2026 18:02:48:248] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f497b3e65fa3c0d6380903 201 - 1140.838 ms[39m
+[01-05-2026 18:03:29:329] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:03:29:329] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:03:29:329] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 385.081 ms[39m
+[01-05-2026 18:03:29:329] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 392.678 ms[39m
+[01-05-2026 18:03:29:329] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 200 - 568.202 ms[39m
+[01-05-2026 18:03:29:329] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 200 - 607.457 ms[39m
+[01-05-2026 18:03:37:337] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f497b3e65fa3c0d6380903 201 - 1660.167 ms[39m
+[01-05-2026 18:07:43:743] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 18:07:53:753] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:07:53:753] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 527.760 ms[39m
+[01-05-2026 18:07:53:753] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:07:53:753] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 412.800 ms[39m
+[01-05-2026 18:08:00:80] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:08:00:80] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 590.256 ms[39m
+[01-05-2026 18:08:01:81] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:08:01:81] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 406.808 ms[39m
+[01-05-2026 18:08:05:85] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f497b3e65fa3c0d6380903 200 - 590.982 ms[39m
+[01-05-2026 18:08:10:810] [35mhttp[39m: [35m::1 DELETE /api/v1/chats/delete/69f497b3e65fa3c0d6380903 200 - 619.929 ms[39m
+[01-05-2026 18:08:15:815] [35mhttp[39m: [35m::1 GET /api/v1/users/search?query=muha 304 - 407.995 ms[39m
+[01-05-2026 18:08:17:817] [35mhttp[39m: [35m::1 POST /api/v1/chats/create/69edd901514e3c7bed4af4a9 200 - 994.715 ms[39m
+[01-05-2026 18:08:20:820] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 589.881 ms[39m
+[01-05-2026 18:08:24:824] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 1001.986 ms[39m
+[01-05-2026 18:08:24:824] [35mhttp[39m: [35m::1 GET /api/v1/chats/69f4a5c1f7c50fc10f6805dc 200 - 400.687 ms[39m
+[01-05-2026 18:08:30:830] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 589.697 ms[39m
+[01-05-2026 18:08:38:838] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 1013.092 ms[39m
+[01-05-2026 18:08:44:844] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 996.162 ms[39m
+[01-05-2026 18:08:48:848] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 987.549 ms[39m
+[01-05-2026 18:08:52:852] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 1385.290 ms[39m
+[01-05-2026 18:08:57:857] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 992.960 ms[39m
+[01-05-2026 18:09:07:97] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 4118.312 ms[39m
+[01-05-2026 18:10:30:1030] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:10:30:1030] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 395.880 ms[39m
+[01-05-2026 18:10:30:1030] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:10:31:1031] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 394.828 ms[39m
+[01-05-2026 18:10:37:1037] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 590.089 ms[39m
+[01-05-2026 18:10:50:1050] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:10:50:1050] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 397.152 ms[39m
+[01-05-2026 18:10:50:1050] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:10:50:1050] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 412.351 ms[39m
+[01-05-2026 18:10:54:1054] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 990.534 ms[39m
+[01-05-2026 18:10:59:1059] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 994.571 ms[39m
+[01-05-2026 18:11:05:115] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 592.621 ms[39m
+[01-05-2026 18:11:22:1122] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:11:22:1122] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 392.954 ms[39m
+[01-05-2026 18:11:22:1122] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:11:22:1122] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 396.359 ms[39m
+[01-05-2026 18:11:27:1127] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:11:27:1127] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 396.046 ms[39m
+[01-05-2026 18:11:27:1127] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:11:27:1127] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 401.238 ms[39m
+[01-05-2026 18:11:29:1129] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:11:29:1129] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 393.342 ms[39m
+[01-05-2026 18:11:30:1130] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:11:30:1130] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 416.759 ms[39m
+[01-05-2026 18:11:40:1140] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 594.707 ms[39m
+[01-05-2026 18:11:50:1150] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:11:51:1151] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 397.343 ms[39m
+[01-05-2026 18:11:51:1151] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:11:51:1151] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 411.651 ms[39m
+[01-05-2026 18:11:53:1153] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 590.127 ms[39m
+[01-05-2026 18:11:57:1157] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 987.784 ms[39m
+[01-05-2026 18:12:14:1214] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 577.578 ms[39m
+[01-05-2026 18:12:20:1220] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 994.078 ms[39m
+[01-05-2026 18:17:37:1737] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:17:37:1737] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:17:38:1738] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/v1/chats/getAllChats 200 - 483.159 ms[39m
+[01-05-2026 18:17:38:1738] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 434.889 ms[39m
+[01-05-2026 18:17:38:1738] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 636.547 ms[39m
+[01-05-2026 18:17:39:1739] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 1829.403 ms[39m
+[01-05-2026 18:19:15:1915] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:19:15:1915] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:19:16:1916] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 394.222 ms[39m
+[01-05-2026 18:19:16:1916] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 368.067 ms[39m
+[01-05-2026 18:19:16:1916] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 550.775 ms[39m
+[01-05-2026 18:19:16:1916] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 579.884 ms[39m
+[01-05-2026 18:19:28:1928] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:19:28:1928] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:19:29:1929] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 437.684 ms[39m
+[01-05-2026 18:19:29:1929] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 382.445 ms[39m
+[01-05-2026 18:19:29:1929] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 558.846 ms[39m
+[01-05-2026 18:19:29:1929] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 591.314 ms[39m
+[01-05-2026 18:19:38:1938] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:19:38:1938] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:19:38:1938] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 393.386 ms[39m
+[01-05-2026 18:19:38:1938] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 381.747 ms[39m
+[01-05-2026 18:19:38:1938] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 561.517 ms[39m
+[01-05-2026 18:19:38:1938] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 604.051 ms[39m
+[01-05-2026 18:19:49:1949] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:19:49:1949] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:19:50:1950] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 417.889 ms[39m
+[01-05-2026 18:19:50:1950] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 376.578 ms[39m
+[01-05-2026 18:19:50:1950] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 561.338 ms[39m
+[01-05-2026 18:19:50:1950] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 585.067 ms[39m
+[01-05-2026 18:20:13:2013] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 569.015 ms[39m
+[01-05-2026 18:20:13:2013] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 604.756 ms[39m
+[01-05-2026 18:24:07:247] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 2469.315 ms[39m
+[01-05-2026 18:24:47:2447] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:24:47:2447] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 392.506 ms[39m
+[01-05-2026 18:24:47:2447] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:24:47:2447] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 394.719 ms[39m
+[01-05-2026 18:24:49:2449] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 597.355 ms[39m
+[01-05-2026 18:24:56:2456] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 1055.713 ms[39m
+[01-05-2026 18:25:04:254] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 2618.912 ms[39m
+[01-05-2026 18:25:42:2542] [35mhttp[39m: [35m::1 GET /api/v1/health 404 - 0.986 ms[39m
+[01-05-2026 18:27:22:2722] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:27:22:2722] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:27:22:2722] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 398.245 ms[39m
+[01-05-2026 18:27:22:2722] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 366.410 ms[39m
+[01-05-2026 18:27:22:2722] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 552.788 ms[39m
+[01-05-2026 18:27:22:2722] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 581.383 ms[39m
+[01-05-2026 18:27:49:2749] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:27:49:2749] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:27:49:2749] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 402.022 ms[39m
+[01-05-2026 18:27:49:2749] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 370.412 ms[39m
+[01-05-2026 18:27:50:2750] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 559.811 ms[39m
+[01-05-2026 18:27:50:2750] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 595.312 ms[39m
+[01-05-2026 18:28:19:2819] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:28:19:2819] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:28:20:2820] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 396.966 ms[39m
+[01-05-2026 18:28:20:2820] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 367.753 ms[39m
+[01-05-2026 18:28:20:2820] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 547.653 ms[39m
+[01-05-2026 18:28:20:2820] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 581.287 ms[39m
+[01-05-2026 18:29:40:2940] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:29:40:2940] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:29:40:2940] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 401.210 ms[39m
+[01-05-2026 18:29:40:2940] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 370.073 ms[39m
+[01-05-2026 18:29:41:2941] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 544.319 ms[39m
+[01-05-2026 18:29:41:2941] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 581.549 ms[39m
+[01-05-2026 18:29:54:2954] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:29:54:2954] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:29:54:2954] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 364.428 ms[39m
+[01-05-2026 18:29:54:2954] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 391.884 ms[39m
+[01-05-2026 18:29:54:2954] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 558.419 ms[39m
+[01-05-2026 18:29:54:2954] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 579.986 ms[39m
+[01-05-2026 18:30:03:303] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:30:04:304] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:30:04:304] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 393.813 ms[39m
+[01-05-2026 18:30:04:304] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 434.500 ms[39m
+[01-05-2026 18:30:04:304] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 591.389 ms[39m
+[01-05-2026 18:30:04:304] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 615.577 ms[39m
+[01-05-2026 18:30:35:3035] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:30:35:3035] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:30:35:3035] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 397.847 ms[39m
+[01-05-2026 18:30:35:3035] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 418.465 ms[39m
+[01-05-2026 18:30:35:3035] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 590.606 ms[39m
+[01-05-2026 18:30:35:3035] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 605.689 ms[39m
+[01-05-2026 18:32:49:3249] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:32:50:3250] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:32:50:3250] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 395.065 ms[39m
+[01-05-2026 18:32:50:3250] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 398.442 ms[39m
+[01-05-2026 18:32:50:3250] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 548.649 ms[39m
+[01-05-2026 18:32:50:3250] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 552.740 ms[39m
+[01-05-2026 18:33:00:330] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:33:00:330] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:33:00:330] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 364.232 ms[39m
+[01-05-2026 18:33:00:330] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 395.771 ms[39m
+[01-05-2026 18:33:00:330] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 548.323 ms[39m
+[01-05-2026 18:33:00:330] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 585.166 ms[39m
+[01-05-2026 18:33:12:3312] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:33:12:3312] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:33:13:3313] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 389.862 ms[39m
+[01-05-2026 18:33:13:3313] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 387.631 ms[39m
+[01-05-2026 18:33:13:3313] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 558.275 ms[39m
+[01-05-2026 18:33:13:3313] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 545.264 ms[39m
+[01-05-2026 18:33:22:3322] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:33:22:3322] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:33:22:3322] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 444.108 ms[39m
+[01-05-2026 18:33:22:3322] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 426.522 ms[39m
+[01-05-2026 18:33:23:3323] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 655.318 ms[39m
+[01-05-2026 18:33:23:3323] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 625.403 ms[39m
+[01-05-2026 18:33:47:3347] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 553.400 ms[39m
+[01-05-2026 18:33:47:3347] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 582.523 ms[39m
+[01-05-2026 18:34:00:340] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 547.358 ms[39m
+[01-05-2026 18:34:00:340] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 578.492 ms[39m
+[01-05-2026 18:34:53:3453] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 562.281 ms[39m
+[01-05-2026 18:34:53:3453] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 601.403 ms[39m
+[01-05-2026 18:35:17:3517] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 546.031 ms[39m
+[01-05-2026 18:35:17:3517] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 588.269 ms[39m
+[01-05-2026 18:35:27:3527] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 551.900 ms[39m
+[01-05-2026 18:35:27:3527] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 584.374 ms[39m
+[01-05-2026 18:35:41:3541] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 569.268 ms[39m
+[01-05-2026 18:35:41:3541] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 585.025 ms[39m
+[01-05-2026 18:38:57:3857] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:38:58:3858] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 879.348 ms[39m
+[01-05-2026 18:38:59:3859] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:38:59:3859] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 568.493 ms[39m
+[01-05-2026 18:39:03:393] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 600.826 ms[39m
+[01-05-2026 18:42:02:422] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:42:02:422] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/v1/chats/getAllChats 304 - 461.513 ms[39m
+[01-05-2026 18:42:03:423] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:42:03:423] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 394.187 ms[39m
+[01-05-2026 18:42:08:428] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 651.872 ms[39m
+[01-05-2026 18:46:26:4626] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:46:26:4626] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 412.904 ms[39m
+[01-05-2026 18:46:26:4626] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:46:26:4626] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:46:27:4627] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 496.618 ms[39m
+[01-05-2026 18:46:27:4627] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 386.925 ms[39m
+[01-05-2026 18:46:27:4627] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 18:46:27:4627] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 371.521 ms[39m
+[01-05-2026 18:49:56:4956] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 551.615 ms[39m
+[01-05-2026 18:50:11:5011] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 1813.298 ms[39m
+[01-05-2026 18:50:12:5012] [35mhttp[39m: [35m::1 GET /api/v1/chats/69f4a5c1f7c50fc10f6805dc 200 - 371.585 ms[39m
+[01-05-2026 18:50:15:5015] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 596.757 ms[39m
+[01-05-2026 18:59:35:5935] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 19:01:21:121] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 19:02:13:213] [32minfo[39m: [32mServer is running on port 4000[39m
+[01-05-2026 19:02:21:221] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:02:22:222] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 391.234 ms[39m
+[01-05-2026 19:02:22:222] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:02:22:222] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 378.200 ms[39m
+[01-05-2026 19:02:34:234] [35mhttp[39m: [35m::1 GET / 404 - 0.887 ms[39m
+[01-05-2026 19:05:29:529] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:05:29:529] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 379.647 ms[39m
+[01-05-2026 19:05:30:530] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:05:30:530] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 379.460 ms[39m
+[01-05-2026 19:05:31:531] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 567.404 ms[39m
+[01-05-2026 19:05:59:559] [35mhttp[39m: [35m::1 POST /api/v1/users/googleAuth 200 - 1644.650 ms[39m
+[01-05-2026 19:06:00:60] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:06:00:60] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 397.524 ms[39m
+[01-05-2026 19:06:00:60] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:06:00:60] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 422.796 ms[39m
+[01-05-2026 19:06:03:63] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 551.611 ms[39m
+[01-05-2026 19:07:07:77] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:07:07:77] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 387.378 ms[39m
+[01-05-2026 19:07:07:77] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:07:07:77] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 381.241 ms[39m
+[01-05-2026 19:07:09:79] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 545.115 ms[39m
+[01-05-2026 19:07:52:752] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 1346.595 ms[39m
+[01-05-2026 19:08:03:83] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 2486.320 ms[39m
+[01-05-2026 19:08:17:817] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:08:17:817] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 464.034 ms[39m
+[01-05-2026 19:08:18:818] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:08:18:818] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 378.596 ms[39m
+[01-05-2026 19:08:20:820] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 563.941 ms[39m
+[01-05-2026 19:08:29:829] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 951.572 ms[39m
+[01-05-2026 19:08:37:837] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 2206.548 ms[39m
+[01-05-2026 19:08:46:846] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 1015.280 ms[39m
+[01-05-2026 19:08:54:854] [35mhttp[39m: [35m::1 DELETE /api/v1/message/delete/69f4a5c1f7c50fc10f6805dc/69f4b3dd286e167fdaa49706 200 - 757.913 ms[39m
+[01-05-2026 19:09:27:927] [35mhttp[39m: [35m::1 DELETE /api/v1/message/delete/69f4a5c1f7c50fc10f6805dc/69f4b3c2286e167fdaa49704 200 - 2202.667 ms[39m
+[01-05-2026 19:09:39:939] [35mhttp[39m: [35m::1 DELETE /api/v1/message/delete/69f4a5c1f7c50fc10f6805dc/69f4b3ed286e167fdaa49709 200 - 1131.506 ms[39m
+[01-05-2026 19:09:45:945] [35mhttp[39m: [35m::1 DELETE /api/v1/message/delete/69f4a5c1f7c50fc10f6805dc/69f4b3e4286e167fdaa49707 200 - 2297.007 ms[39m
+[01-05-2026 19:09:52:952] [35mhttp[39m: [35m::1 DELETE /api/v1/message/delete/69f4a5c1f7c50fc10f6805dc/69f4b3b7286e167fdaa49703 200 - 1170.002 ms[39m
+[01-05-2026 19:23:44:2344] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:23:45:2345] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 1407.290 ms[39m
+[01-05-2026 19:23:45:2345] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:23:45:2345] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 358.154 ms[39m
+[01-05-2026 19:23:51:2351] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:23:51:2351] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 470.503 ms[39m
+[01-05-2026 19:23:51:2351] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:23:51:2351] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 358.183 ms[39m
+[01-05-2026 19:23:54:2354] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 572.495 ms[39m
+[01-05-2026 19:23:59:2359] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 928.506 ms[39m
+[01-05-2026 19:24:02:242] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 529.667 ms[39m
+[01-05-2026 19:26:13:2613] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:26:13:2613] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 769.441 ms[39m
+[01-05-2026 19:26:15:2615] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:26:15:2615] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 937.114 ms[39m
+[01-05-2026 19:26:17:2617] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:26:17:2617] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 2480.619 ms[39m
+[01-05-2026 19:26:17:2617] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:26:17:2617] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 374.178 ms[39m
+[01-05-2026 19:26:46:2646] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 556.826 ms[39m
+[01-05-2026 19:26:48:2648] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 933.479 ms[39m
+[01-05-2026 19:26:49:2649] [35mhttp[39m: [35m::1 GET /api/v1/chats/69f4a5c1f7c50fc10f6805dc 200 - 377.538 ms[39m
+[01-05-2026 19:26:52:2652] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 890.948 ms[39m
+[01-05-2026 19:26:55:2655] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 924.833 ms[39m
+[01-05-2026 19:27:14:2714] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 3241.932 ms[39m
+[01-05-2026 19:27:23:2723] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 943.501 ms[39m
+[01-05-2026 19:27:32:2732] [35mhttp[39m: [35m::1 POST /api/v1/message/send/69f4a5c1f7c50fc10f6805dc 201 - 2364.748 ms[39m
+[01-05-2026 19:31:11:3111] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:31:11:3111] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:31:11:3111] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 358.663 ms[39m
+[01-05-2026 19:31:11:3111] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 200 - 371.268 ms[39m
+[01-05-2026 19:31:11:3111] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 536.447 ms[39m
+[01-05-2026 19:31:12:3112] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 200 - 1626.076 ms[39m
+[01-05-2026 19:31:21:3121] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:31:21:3121] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:31:21:3121] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 368.583 ms[39m
+[01-05-2026 19:31:21:3121] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 367.595 ms[39m
+[01-05-2026 19:31:22:3122] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 526.165 ms[39m
+[01-05-2026 19:31:22:3122] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 524.262 ms[39m
+[01-05-2026 19:31:32:3132] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:31:32:3132] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:31:32:3132] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 359.245 ms[39m
+[01-05-2026 19:31:32:3132] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 366.547 ms[39m
+[01-05-2026 19:31:32:3132] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 535.081 ms[39m
+[01-05-2026 19:31:32:3132] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 561.625 ms[39m
+[01-05-2026 19:31:41:3141] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:31:41:3141] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:31:41:3141] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 369.421 ms[39m
+[01-05-2026 19:31:41:3141] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 364.841 ms[39m
+[01-05-2026 19:31:41:3141] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 521.002 ms[39m
+[01-05-2026 19:31:41:3141] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 523.796 ms[39m
+[01-05-2026 19:32:08:328] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:32:08:328] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 401.673 ms[39m
+[01-05-2026 19:32:08:328] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 580.673 ms[39m
+[01-05-2026 19:32:08:328] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:32:08:328] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 827.512 ms[39m
+[01-05-2026 19:32:08:328] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 971.375 ms[39m
+[01-05-2026 19:32:25:3225] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:32:25:3225] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:32:25:3225] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 355.901 ms[39m
+[01-05-2026 19:32:25:3225] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 363.587 ms[39m
+[01-05-2026 19:32:25:3225] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 524.211 ms[39m
+[01-05-2026 19:32:25:3225] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 542.614 ms[39m
+[01-05-2026 19:32:36:3236] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:32:36:3236] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:32:36:3236] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 364.483 ms[39m
+[01-05-2026 19:32:36:3236] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 370.433 ms[39m
+[01-05-2026 19:32:37:3237] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 529.002 ms[39m
+[01-05-2026 19:32:37:3237] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 552.424 ms[39m
+[01-05-2026 19:32:50:3250] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:32:50:3250] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:32:50:3250] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 366.118 ms[39m
+[01-05-2026 19:32:50:3250] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 367.945 ms[39m
+[01-05-2026 19:32:50:3250] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 525.052 ms[39m
+[01-05-2026 19:32:50:3250] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 544.425 ms[39m
+[01-05-2026 19:33:04:334] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:33:04:334] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:33:04:334] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 363.755 ms[39m
+[01-05-2026 19:33:04:334] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 367.136 ms[39m
+[01-05-2026 19:33:04:334] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 524.561 ms[39m
+[01-05-2026 19:33:04:334] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 547.094 ms[39m
+[01-05-2026 19:33:18:3318] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:33:18:3318] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:33:18:3318] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 371.159 ms[39m
+[01-05-2026 19:33:18:3318] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 376.567 ms[39m
+[01-05-2026 19:33:18:3318] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 534.925 ms[39m
+[01-05-2026 19:33:18:3318] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 581.512 ms[39m
+[01-05-2026 19:33:29:3329] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 589.170 ms[39m
+[01-05-2026 19:33:29:3329] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 597.826 ms[39m
+[01-05-2026 19:33:40:3340] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 544.420 ms[39m
+[01-05-2026 19:33:40:3340] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 556.113 ms[39m
+[01-05-2026 19:34:04:344] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 535.556 ms[39m
+[01-05-2026 19:34:04:344] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 571.663 ms[39m
+[01-05-2026 19:35:48:3548] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 1694.561 ms[39m
+[01-05-2026 19:35:48:3548] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 1703.979 ms[39m
+[01-05-2026 19:35:57:3557] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 548.153 ms[39m
+[01-05-2026 19:35:57:3557] [35mhttp[39m: [35m::1 GET /api/v1/message/get/69f4a5c1f7c50fc10f6805dc 304 - 543.859 ms[39m
+[01-05-2026 19:48:09:489] [32minfo[39m: [32msome one hit get all chats[39m
+[01-05-2026 19:48:09:489] [35mhttp[39m: [35m::1 GET /api/v1/chats/getAllChats 304 - 1328.211 ms[39m
+[01-05-2026 19:48:16:4816] [35mhttp[39m: [35m::1 POST /api/v1/users/logout 200 - 407.018 ms[39m
+[01-05-2026 19:49:02:492] [32minfo[39m: [32mServer is running on port 4000[39m

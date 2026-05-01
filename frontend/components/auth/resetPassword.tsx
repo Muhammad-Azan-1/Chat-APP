@@ -17,7 +17,7 @@ const NewPassword = () => {
   const redirectParam = searchParams.get("redirect");
   const redirectQuery = redirectParam ? `?redirect=${encodeURIComponent(redirectParam)}` : "";
 
-  console.log("TOKEN" , token)
+  // console.log("TOKEN" , token)
   const Router = useRouter()
 
   const [showPassword, setShowPassword] = useState(false)

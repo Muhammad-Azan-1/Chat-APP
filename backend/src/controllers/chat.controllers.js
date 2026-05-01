@@ -196,9 +196,8 @@ const createOneOnONeChat = asyncHandler(async (req, res, next) => {
 
     // 2. Are you the OTHER person (Zaid)?
     // If yes, I am going to ping your personal "User ID Room"
-    // console.log(`[TESTING] Emitting to Room ID: "${items._id.toString()}"`);
-    // emitSocketEvents(req, items._id.toString() , ChatEventEnum.NEW_CHAT_EVENT, payload);
-    // we will not do this emit
+    console.log(`[TESTING] Emitting newChat to Room ID: "${items._id.toString()}"`);
+    emitSocketEvents(req, items._id.toString() , ChatEventEnum.NEW_CHAT_EVENT, payload);
   });
 
   res
@@ -302,9 +301,44 @@ const getAllChats = asyncHandler(async (req, res, next) => {
 });
 
 
+//* get a Single chat for a User
+const getChatById = asyncHandler(async (req, res) => {
+  const { chatId } = req.params;
+  const { id } = req.user;
+
+  const chatAggregation = await Chat.aggregate([
+    {
+      $match: {
+        _id: new mongoose.Types.ObjectId(chatId),
+      },
+    },
+    ...commonChatAggregation(),
+  ]);
+
+  const chat = chatAggregation[0];
+
+  if (!chat) {
+    throw new ApiError(404, "Chat does not exist");
+  }
+
+  // Verify user is a participant
+  const isParticipant = chat.participants.some(
+    (p) => p._id.toString() === id.toString()
+  );
+
+  if (!isParticipant) {
+    throw new ApiError(403, "You are not a participant of this chat");
+  }
+
+  return res
+    .status(200)
+    .json(new ApiResponse(200, "Chat fetched successfully", chat));
+});
 
 
-export { createOneOnONeChat , getAllChats , deleteOneOnOneChat };
+
+
+export { createOneOnONeChat , getAllChats , deleteOneOnOneChat, getChatById };
 
 
 

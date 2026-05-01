@@ -18,6 +18,7 @@ import { transformBackendChatToUI } from "@/lib/transformBackendChatToUI";
 import { useDispatch } from "react-redux";
 import { SET_CHAT_ACTION } from "@/redux/actions/chatAction";
 import { AppDispatch } from "@/redux/store/store";
+import { formatChatTime } from "@/lib/formatTime";
 
 const LeftChatBox = ({ selectedChat, onSelectChat , setIsSidebarOpen, setIsProfileOpen }: Props) => {
 
@@ -51,7 +52,7 @@ const LeftChatBox = ({ selectedChat, onSelectChat , setIsSidebarOpen, setIsProfi
         dispatch(SET_CHAT_ACTION(formattedChats))
 
      } catch (error: any) {
-      console.error("Fetch chats error:", error)
+      // console.error("Fetch chats error:", error)
       setFetchError(error.message || "Failed to load chats")
      } finally {
       setIsLoading(false)
@@ -59,10 +60,9 @@ const LeftChatBox = ({ selectedChat, onSelectChat , setIsSidebarOpen, setIsProfi
     }
 
     fetchChats()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[details?._id]) // Re-fetch when user details load
 
-  // console.log("val" , val)
+  },[details?._id])
+
   return (
     <div className="w-full h-screen border-r border-gray-600/30 flex flex-col bg-white/5 backdrop-blur-xl shadow-2xl">
 
@@ -230,9 +230,9 @@ const LeftChatBox = ({ selectedChat, onSelectChat , setIsSidebarOpen, setIsProfi
               {/* Time + unread badge */}
               <div className="absolute top-1/2 -translate-y-1/2 right-3 sm:right-4 flex flex-col items-end gap-y-1.5">
                 <p className={`text-[11px] ${chat?.unreadCount && chat.unreadCount > 0 ? "text-[#6c75f5] font-medium" : "text-gray-500"}`}>
-                  {chat.time}
+                  {chat.time ? formatChatTime(chat.time) : ""}
                 </p>
-                {chat?.unreadCount && chat.unreadCount > 0 && (
+                {chat?.unreadCount !== undefined && chat.unreadCount > 0 && (
                   <div className="bg-[#6c75f5] text-white text-[10px] font-bold px-1.5 py-0.5 min-w-[20px] text-center rounded-full shadow-[0_0_8px_rgba(108,117,245,0.4)]">
                     {chat.unreadCount}
                   </div>
