@@ -31,7 +31,9 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/api/v1/:path*",
-        destination: "http://localhost:4000/api/v1/:path*",
+       destination: process.env.NODE_ENV === "production"
+          ? "/backend/api/v1/:path*"          // In Production (Vercel)
+          : "http://localhost:4000/api/v1/:path*", // In Local Development
       },
     ]
   },
