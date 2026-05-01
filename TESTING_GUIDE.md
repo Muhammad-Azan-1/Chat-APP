@@ -241,3 +241,37 @@ frontend/
 - Use React DevTools to inspect component props
 
 Ready to test! 🚀
+
+
+
+
+
+ There is an issue in the messages rendering on when user refresh the page or page get refreshed by anything                                                      
+                                                                                                                                                                   
+  means when getAllMessage APi get called                                                                                                                        
+
+  # User story
+
+  user A send HI , I am Azan
+  user B send Hi then , Azan how are you doing
+
+  to messages come perfectly first  User A 2 messages come and then user B 2 messages
+
+  but as page got refreshed then suddenly
+
+  on user A side and enve on B side user B messaged comes up le me show you some screen shots to understand
+
+  Image one user A start convo
+
+  '/var/folders/0q/qh2srhsn2y97gt44z3_67qlm0000gn/T/TemporaryItems/NSIRD_screencaptureui_iCO8SR/Screenshot 2026-05-02 at 1.05.54 AM.png'
+
+    Image two user B reply
+  '/var/folders/0q/qh2srhsn2y97gt44z3_67qlm0000gn/T/TemporaryItems/NSIRD_screencaptureui_rphK4A/Screenshot 2026-05-02 at 1.06.35 AM.png'
+
+  Now see what happen as I refresh
+
+  Image one User A
+  '/var/folders/0q/qh2srhsn2y97gt44z3_67qlm0000gn/T/TemporaryItems/NSIRD_screencaptureui_Nvo8Bi/Screenshot 2026-05-02 at 1.06.59 AM.png'
+
+  Image two user B
+  '/var/folders/0q/qh2srhsn2y97gt44z3_67qlm0000gn/T/TemporaryItems/NSIRD_screencaptureui_FFf0iN/Screenshot 2026-05-02 at 1.07.30 AM.png'

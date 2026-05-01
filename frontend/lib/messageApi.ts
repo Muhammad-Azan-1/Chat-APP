@@ -1,7 +1,6 @@
 import { customFetch } from "./customFetch";
 import { BackendMessage, Message } from "@/types/chat.types";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 // Transform backend message to frontend format
 export function transformBackendMessageToUI(

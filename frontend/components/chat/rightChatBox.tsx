@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
-import { Button } from "../ui/button";
 import { MoreVertical, Phone, Video } from "lucide-react";
 import type { Props } from "@/types/chat.types";
 import NoChatSelected from "./noSelectedChat";
@@ -63,6 +62,7 @@ const RightChatBox = ({ selectedChat, onLogout }: Props) => {
   };
 
 
+  console.log("On REFRESH GOT ALL MESSAGES " , messages)
   return (
     <div className="w-full h-screen flex flex-col bg-[#12141D] backdrop-blur-3xl relative">
       {/* Optional subtle gradient background effect */}

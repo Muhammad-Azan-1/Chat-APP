@@ -62,7 +62,7 @@ const getAllMessages = asyncHandler(async (req, res) => {
     ...chatMessageCommonAggregation(),
     {
       $sort: {
-        createdAt: -1,
+        createdAt: 1,
       },
     },
   ]);
@@ -158,8 +158,6 @@ const sendMessage = asyncHandler(async (req, res) => {
     .status(201)
     .json(new ApiResponse(201,  "Message saved successfully" ,receivedMessage));
 });
-
-
 
 const deleteMessage = asyncHandler(async (req, res) => {
   //controller to delete chat messages and attachments
